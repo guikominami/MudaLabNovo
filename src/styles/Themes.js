@@ -19,7 +19,8 @@ export const light = {
   fontlg: "1.1em",
   fontxl: "1.2em",
   fontxxl: "1.4em",
-  fontxxxl: "2.4em",
+  fontxxxl: "1.8em",  
+  fontxxxxl: "2.4em",
 
   fontButton: "0.875em",
   navHeight: "3.5rem",

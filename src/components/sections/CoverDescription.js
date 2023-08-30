@@ -1,9 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import Subtitle from "../elements/SubtitleComponent";
-import SubText from "../elements/SubTextComponent";
-
 const Section = styled.section`
   height: 80vh;
   width: 100vw;
@@ -19,7 +16,7 @@ const Section = styled.section`
   //flex-direction: column;
 
   @media (max-width: 48em) {
-    min-height: 80vh;
+    min-height: 110vh;
     justify-content: center;
   }
 `;
@@ -31,10 +28,10 @@ const Container = styled.div`
 
   @media (max-width: 64em) {
     justify-content: center;
-    min-height: 70vh;
+    //min-height: 70vh;
   }
 
-  @media (max-width: 48em) {
+  @media (max-width: 48em) { 
     flex-direction: column;
     justify-content: space-around;
   }
@@ -44,14 +41,65 @@ const Box = styled.div`
   width: 100%;
 
   font-size: ${(props) => props.theme.fontxxl};
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 64em) {
+    margin-left: 4rem;
+    margin-right: 4rem;    
+  }  
 
   @media (max-width: 48em) {
-    width: 95%;
-    margin-right: 0;
-    display: flex;
+    flex-direction: column;
+
     align-items: center;
     justify-content: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
+`;
+
+const Subtitle = styled.h2`
+  font-size: ${(props) => props.theme.fontxl};
+  color: ${(props) => props.theme.text};
+  align-self: flex-start;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 64em) {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 40em) {
+    width: 80%;
+    font-size: ${(props) => props.theme.fontmd};
+    margin-left: 2rem;     
+  }
+`;
+
+const SubText = styled.p`
+  font-size: ${(props) => props.theme.fontxl};
+  color: ${(props) => props.theme.text};
+  align-self: flex-start;
+  width: 80%;
+  margin: 1rem auto;
+  font-weight: 400;
+
+  @media (max-width: 64em) {
+    width: 100%;
+    text-align: left;
+    font-size: ${(props) => props.theme.fontmd};
+  }
+
+  @media (max-width: 40em) {
+    width: 80%;
+    margin-left: 2rem;     
+  }  
+
 `;
 
 const CoverDescription = () => {

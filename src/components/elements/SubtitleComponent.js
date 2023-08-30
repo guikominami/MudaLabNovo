@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components';
 
-const SubTitle = styled.h2`
+const Subtitle = styled.h2`
   font-size: ${(props) => props.theme.fontxl};
   color: ${(props) => props.theme.text};
   align-self: flex-start;
@@ -22,9 +22,9 @@ const SubTitle = styled.h2`
 
 const SubtitleComponent = (props) => {
   return (
-    <SubTitle>
+    <Subtitle>
       {props.children}
-    </SubTitle>
+    </Subtitle>
   )
 }
 

@@ -28,11 +28,19 @@ const TextContainer = styled.div`
   position: absolute;
 
   color: ${(props) => props.theme.body};
-  font-size: ${(props) => props.theme.fontxxxl};
+  font-size: ${(props) => props.theme.fontxxxxl};
   font-weight: 800;
 
   text-shadow: 1px 1px black;
-  //text-transform: uppercase;  
+
+  @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxxxl};
+
+    margin-top: 24rem;
+    margin-left: 2rem;
+
+    text-shadow: 2px 2px black;    
+  }
 `;
 
 const SwiperContainerDesktop = styled.div`
