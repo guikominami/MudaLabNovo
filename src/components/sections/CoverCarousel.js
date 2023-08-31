@@ -34,9 +34,9 @@ const TextContainer = styled.div`
   text-shadow: 1px 1px black;
 
   @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxxxl};
+    font-size: ${(props) => props.theme.fontxxl};
 
-    margin-top: 24rem;
+    margin-top: 26rem;
     margin-left: 2rem;
 
     text-shadow: 2px 2px black;    

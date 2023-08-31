@@ -17,6 +17,7 @@ const SubText = styled.p`
 
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontmd};
+    margin-bottom: 1.5rem;
   }
 `;
 

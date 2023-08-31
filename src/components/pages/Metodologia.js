@@ -17,6 +17,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
+
+  @media (max-width: 48em) {
+    flex-direction: column;
+    margin-bottom: 1rem;    
+  }  
 `;
 
 const Title = styled.h1`
@@ -33,6 +38,8 @@ const Title = styled.h1`
 
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontxl};
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;    
   }
 `;
 
@@ -52,6 +59,17 @@ const Box = styled.div`
     margin-top: 1rem;
     width: 85%;
   }
+
+  @media (max-width: 48em) {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    img {
+      margin-top: 1rem;
+      width: 90%;
+    }    
+  }  
 `;
 
 const SubText = styled.p`
@@ -61,6 +79,10 @@ const SubText = styled.p`
   width: 85%;
   margin: 1rem auto;
   font-weight: 500;
+
+  @media (max-width: 48em) {
+    width: 90%;
+  }    
 `;
 
 const Metodologia = () => {

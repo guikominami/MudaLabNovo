@@ -16,7 +16,7 @@ const Section = styled.section`
   //flex-direction: column;
 
   @media (max-width: 48em) {
-    min-height: 110vh;
+    min-height: 100vh;
     justify-content: center;
   }
 `;
@@ -40,7 +40,6 @@ const Container = styled.div`
 const Box = styled.div`
   width: 100%;
 
-  font-size: ${(props) => props.theme.fontxxl};
   display: flex;
   flex-direction: row;
 
@@ -55,8 +54,8 @@ const Box = styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -76,7 +75,6 @@ const Subtitle = styled.h2`
 
   @media (max-width: 40em) {
     width: 80%;
-    font-size: ${(props) => props.theme.fontmd};
     margin-left: 2rem;     
   }
 `;
@@ -92,7 +90,6 @@ const SubText = styled.p`
   @media (max-width: 64em) {
     width: 100%;
     text-align: left;
-    font-size: ${(props) => props.theme.fontmd};
   }
 
   @media (max-width: 40em) {

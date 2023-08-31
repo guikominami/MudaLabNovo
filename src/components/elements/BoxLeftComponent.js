@@ -8,8 +8,7 @@ const BoxLeft = styled.div`
   align-self: center;
 
   @media (max-width: 48em){
-    margin-top: 1rem;
-    width: 85%;    
+    width: 88%;    
   }    
 `;
 

@@ -15,17 +15,11 @@ const Container = styled.div`
   box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
 
   @media (max-width: 48em) {
-    width: 93%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
+    width: 92%;
 
-/*     & > *:last-child {
-      & > *:first-child {
-        margin-top: 0;
-      }
-    } */
+    flex-direction: column;
+    justify-content: start;
+    margin: 5.5rem 0rem 1rem 0rem;
   }
 `;
 

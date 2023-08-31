@@ -9,9 +9,6 @@ const BoxRight = styled.div`
   margin-bottom: 1rem;
 
   @media (max-width: 48em) {
-    width: 87%;
-    margin-bottom: 1rem;
-
     display: flex;
     //vertical  
     justify-content: center;

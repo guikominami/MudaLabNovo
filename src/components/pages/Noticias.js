@@ -16,6 +16,11 @@ const Box = styled.div`
 
   @media (max-width: 48em) {
     display: flex;
+
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -32,12 +37,13 @@ const SubTitle = styled.h2`
   @media (max-width: 64em) {
     width: 100%;
     text-align: left;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 1rem;    
   }
 
   @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxl};
+    font-size: ${(props) => props.theme.fontmd};
   }
 `;
 
@@ -61,9 +67,7 @@ const SubText = styled.p`
 
 const VideoContainer = styled.div`
   width: 100%;
-  //height: 70vh;
 
-  //margin-top: 4rem;
   margin-bottom: 1rem;
 
   //display: flex;
@@ -74,16 +78,30 @@ const VideoContainer = styled.div`
   //alinhar uma div em cima da outra
   flex-direction: column;
 
+  iframe{
+    width:350px;
+    height:180px;
+  }
+
   @media (max-width: 48em) {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
+    margin-bottom: 0rem;
+
+    iframe{
+      width:260px;
+      height:140px;
+    }    
+  }  
 `;
 
 const ListItem = styled.li`
   img {
     margin-left: 6px;
     width: 2%;
+
+    @media (max-width: 48em) {
+      width: 5%;
+    }    
   }
 `;
 
@@ -109,8 +127,6 @@ const Noticias = () => {
             <iframe
               src="https://www.youtube.com/embed/j8zXP8ccA1Y"
               title="Pará sustentável"
-              width="350"
-              height="180"
             />
           </VideoContainer>
           <Line />

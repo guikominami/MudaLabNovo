@@ -17,6 +17,7 @@ const Subtitle = styled.h2`
 
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontxl};
+    margin-top: 1.5rem;
   }
 `;
 

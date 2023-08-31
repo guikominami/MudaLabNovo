@@ -2,12 +2,74 @@ import React from "react";
 import { styled } from "styled-components";
 
 import Section from "../elements/SectionComponent";
-import Container from "../elements/ContainerComponent";
-import BoxRight from "../elements/BoxRightComponent";
 import SubText from "../elements/SubTextComponent";
 
 import imgLara from "../../assets/images/equipe/lara.jpg";
 import imgGui from "../../assets/images/equipe/gui.jpg";
+
+const Container = styled.div`
+  width: 90%;
+  min-height: 50vh;
+  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5rem 0rem 2rem 0rem;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
+
+  @media (max-width: 48em) {
+    width: 92%;
+
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: ${(props) => props.theme.fontxl};
+  text-transform: uppercase;
+  color: ${(props) => props.theme.text};
+
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  background-color: white;
+
+  border-bottom: 2px solid ${(props) => props.theme.text};
+
+  @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontxl};
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;    
+  }
+`;
+
+const Box = styled.div`
+  width: 50%;
+  height: auto;
+
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 48em) {
+    flex-direction: column;
+    
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+
+    width: 90%;    
+    //vertical  
+    justify-content: center;
+    //horizontal  
+    align-items: center;
+    //vertical  
+    align-self: center;  
+  }
+`;
 
 const ImageContainer = styled.div`
   width: 100%;
@@ -22,13 +84,22 @@ const ImageContainer = styled.div`
     width: 80%;
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 31%);
   }
+
+  @media (max-width: 48em) {
+    height: auto;
+    margin-bottom: 2rem;
+    img{
+      width: 100%;
+    }
+  }
 `;
 
 const Equipe = () => {
   return (
     <Section>
+      <Title>EQUIPE</Title>
       <Container>
-        <BoxRight>
+        <Box>
           <ImageContainer>
             <img src={imgLara} alt="Imagem da Lara" />
           </ImageContainer>
@@ -40,8 +111,8 @@ const Equipe = () => {
             públicas. Suas práticas transitam nos campos da educação, direitos
             humanos, territórios e processos participativos.
           </SubText>
-        </BoxRight>
-        <BoxRight>
+        </Box>
+        <Box>
           <ImageContainer>
             <img src={imgGui} alt="Imagem do Gui" />
           </ImageContainer>          
@@ -53,7 +124,7 @@ const Equipe = () => {
             Movimento Maker e se especializou em Novas Tecnologias abertas e de
             baixo custo.
           </SubText>
-        </BoxRight>
+        </Box>
       </Container>
     </Section>
   );

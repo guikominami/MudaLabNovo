@@ -20,8 +20,6 @@ const Section = styled.section`
   box-shadow: ${(props) =>
     props.isTransparent ? "0" : "0 0.125rem 0.25rem 0 rgb(0 0 0 / 31%)"};
 
-  //box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 31%);
-
   z-index: 3;
 `;
 
@@ -71,7 +69,7 @@ const MenuItem = styled.li`
     props.isTransparent ? props.theme.body : props.theme.text};
 
   text-shadow: ${(props) =>
-    props.isTransparent ? "1px 1px black" : "0"};    
+    props.isTransparent ? "1px 1px black" : "0"};     
 
   cursor: pointer;
   
@@ -98,11 +96,11 @@ const MenuItem = styled.li`
     margin: 1rem 0;
     width: 90%;
     color: ${(props) => props.theme.text};
-
+    text-shadow: none;
     &::after {
       display: none;
     }
-  }
+  } 
 `;
 
 const SubMenuItem = styled.span`
@@ -177,7 +175,7 @@ const HamburgerMenu = styled.span`
 
   position: absolute;
   top: 2rem;
-  left: 90%;
+  left: 86%;
   transform: ${(props) =>
     props.click
       ? "translateX(-50%) rotate(90deg)"

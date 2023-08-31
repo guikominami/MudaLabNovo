@@ -103,8 +103,8 @@ const TextContainer = styled.div`
   font-style: italic;
 
   @media (max-width: 64em) {
-    font-size: ${(props) => props.theme.fontlg};
-    margin-bottom: 3rem;
+    font-size: ${(props) => props.theme.fontmd};
+    margin-bottom: 4rem;
   }  
 `;
 
