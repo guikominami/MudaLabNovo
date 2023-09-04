@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 const Section = styled.section`
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
@@ -26,6 +26,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  
   @media (max-width: 64em) {
     justify-content: center;
     //min-height: 70vh;
@@ -40,13 +41,8 @@ const Container = styled.div`
 const Box = styled.div`
   width: 100%;
 
-  display: flex;
-  flex-direction: row;
-
-  @media (max-width: 64em) {
-    margin-left: 4rem;
-    margin-right: 4rem;    
-  }  
+  margin-left: 4rem;
+  margin-right: 4rem;     
 
   @media (max-width: 48em) {
     flex-direction: column;
@@ -60,7 +56,7 @@ const Box = styled.div`
 `;
 
 const Subtitle = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxxl};
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   width: 80%;
@@ -74,13 +70,14 @@ const Subtitle = styled.h2`
   }
 
   @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxl};    
     width: 80%;
     margin-left: 2rem;     
   }
 `;
 
 const SubText = styled.p`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxl};
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   width: 80%;
@@ -93,6 +90,7 @@ const SubText = styled.p`
   }
 
   @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxl};        
     width: 80%;
     margin-left: 2rem;     
   }  

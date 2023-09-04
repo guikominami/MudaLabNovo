@@ -21,8 +21,7 @@ const SectionComponent = styled.section`
   flex-direction: column;
 
   @media (max-width: 48em) {
-    justify-content: start;
-    width: 96vw;
+    width: 100vw;
     min-height: auto;  
   }
 `;

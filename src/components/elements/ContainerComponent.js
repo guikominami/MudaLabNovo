@@ -18,7 +18,6 @@ const Container = styled.div`
     width: 92%;
 
     flex-direction: column;
-    justify-content: start;
     margin: 5.5rem 0rem 1rem 0rem;
   }
 `;

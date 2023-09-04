@@ -1,22 +1,44 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import Section from "../elements/SectionComponent";
-
 import img1 from "../../assets/images/sobre/sobre1.jpg";
 import img2 from "../../assets/images/sobre/sobre2.jpg";
 import img3 from "../../assets/images/sobre/sobre3.jpg";
 import img4 from "../../assets/images/sobre/sobre4.jpg";
 
+const Section = styled.section`
+  min-height: 87vh;
+  //height: auto;
+  width: 98vw;
+  background-color: ${(props) => props.theme.body};
+
+  //background-color: yellow;
+
+  position: relative;
+  color: ${(props) => props.theme.text};
+
+  display: flex;
+  //vertical
+  justify-content: start;
+  //horizontal
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 48em) {
+    width: 100vw;
+    min-height: auto;  
+  }
+`;
+
 const Container = styled.div`
   width: 100%;
-  min-height: 70vh;
-
-  margin-bottom: 3rem;
+  min-height: 60vh;
 
   display: flex;
   justify-content: center;
   align-content: center;
+
+  margin-top: 0.5rem;
 
   @media (max-width: 48em) {
     flex-direction: column;
@@ -30,7 +52,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.text};
 
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   background-color: white;
 

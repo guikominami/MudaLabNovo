@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae88e9ce.css",
-    "main.js": "/static/js/main.14ccc1af.js",
+    "main.js": "/static/js/main.2378aa83.js",
     "static/js/787.06b636c2.chunk.js": "/static/js/787.06b636c2.chunk.js",
     "static/media/lara.jpg": "/static/media/lara.a30cd5fd309ae485bc23.jpg",
     "static/media/carousel12.jpg": "/static/media/carousel12.ba9c0ffee663336037f5.jpg",
@@ -27,11 +27,14 @@
     "static/media/lab4.jpg": "/static/media/lab4.2e5661cb17b4a79018c3.jpg",
     "static/media/robo7.jpg": "/static/media/robo7.01b2c232520956ab0979.jpg",
     "static/media/robo5.jpg": "/static/media/robo5.4428277b896fe5d4f0f5.jpg",
+    "static/media/cover_carousel_mobile2.jpg": "/static/media/cover_carousel_mobile2.46f942bebc3d7e6cafbc.jpg",
     "static/media/lab6.jpg": "/static/media/lab6.a8552de7084b64b415c7.jpg",
+    "static/media/cover_carousel_mobile1.jpg": "/static/media/cover_carousel_mobile1.63f7de59a6bd84c46914.jpg",
     "static/media/carousel4.jpg": "/static/media/carousel4.39e817d8fc271ccd08c4.jpg",
     "static/media/cover_carousel3.jpg": "/static/media/cover_carousel3.c1fc961632a0c7b7296e.jpg",
     "static/media/skate1.jpg": "/static/media/skate1.a45256bb68140831193a.jpg",
     "static/media/sobre3.jpg": "/static/media/sobre3.992c21add187570e157e.jpg",
+    "static/media/parceirosDesktop.jpg": "/static/media/parceirosDesktop.a8aeae507cb6dbd4fc35.jpg",
     "static/media/skate3.jpg": "/static/media/skate3.310b4f8d8616f016bc8b.jpg",
     "static/media/robo3.jpg": "/static/media/robo3.21130e2143247d427bdf.jpg",
     "static/media/mpa8.jpg": "/static/media/mpa8.5d4220d04a0712731d65.jpg",
@@ -47,12 +50,16 @@
     "static/media/skate2.jpg": "/static/media/skate2.886499e3dbd53dad1b2e.jpg",
     "static/media/eco2.jpg": "/static/media/eco2.92cb1ef1570c4417e32e.jpg",
     "static/media/cover_carousel6.jpg": "/static/media/cover_carousel6.6141ff00b11ec2eeebb2.jpg",
+    "static/media/cover_carousel_mobile4.jpg": "/static/media/cover_carousel_mobile4.c6856605103442c5cc20.jpg",
     "static/media/cover_carousel2.jpg": "/static/media/cover_carousel2.8356c5c544a48892f2f7.jpg",
     "static/media/eco1.jpg": "/static/media/eco1.c48e63ff135ce4c66a9b.jpg",
     "static/media/cover_carousel5.jpg": "/static/media/cover_carousel5.9b78d4ffeefd0e0c5693.jpg",
+    "static/media/cover_carousel_mobile6.jpg": "/static/media/cover_carousel_mobile6.3992b6daa20880246a31.jpg",
     "static/media/lab3.jpg": "/static/media/lab3.54261be644279fb1db4f.jpg",
+    "static/media/parceirosMobile.jpg": "/static/media/parceirosMobile.f8105886ceedb6c94345.jpg",
+    "static/media/cover_carousel_mobile5.jpg": "/static/media/cover_carousel_mobile5.e23b59b23c54ca617428.jpg",
+    "static/media/cover_carousel_mobile3.jpg": "/static/media/cover_carousel_mobile3.9b5ac72c6f871199f7e0.jpg",
     "static/media/lab0.jpg": "/static/media/lab0.4ca833a5eba9e33b8dda.jpg",
-    "static/media/parceiros.jpg": "/static/media/parceiros.3907b2cabe6758c80fdf.jpg",
     "static/media/carousel5.jpg": "/static/media/carousel5.656eca1248e408a7a861.jpg",
     "static/media/skate4.jpg": "/static/media/skate4.2226d80356a5459f642a.jpg",
     "static/media/akaya-telivigala-all-400-normal.woff": "/static/media/akaya-telivigala-all-400-normal.78fd8cb2a221beeb77ce.woff",
@@ -95,11 +102,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.ae88e9ce.css.map": "/static/css/main.ae88e9ce.css.map",
-    "main.14ccc1af.js.map": "/static/js/main.14ccc1af.js.map",
+    "main.2378aa83.js.map": "/static/js/main.2378aa83.js.map",
     "787.06b636c2.chunk.js.map": "/static/js/787.06b636c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae88e9ce.css",
-    "static/js/main.14ccc1af.js"
+    "static/js/main.2378aa83.js"
   ]
 }

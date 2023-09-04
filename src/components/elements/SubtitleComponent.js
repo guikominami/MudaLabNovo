@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from 'styled-components';
 
 const Subtitle = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxl};
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   width: 80%;

@@ -1,8 +1,30 @@
 import React from "react";
 import { styled } from "styled-components";
-import Section from "../elements/SectionComponent";
-import TitleComponent from "../elements/Title";
-import img from "../../assets/images/parceiros.jpg"
+
+import imgDesktop from "../../assets/images/parceiros/parceirosDesktop.jpg"
+import imgMobile from "../../assets/images/parceiros/parceirosMobile.jpg"
+
+const Section = styled.section`
+  min-height: 87vh;
+  //height: auto;
+  width: 98vw;
+  background-color: ${(props) => props.theme.body};
+
+  position: relative;
+  color: ${(props) => props.theme.text};
+
+  display: flex;
+  //vertical
+  justify-content: center;
+  //horizontal
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 48em) {
+    width: 89vw;
+    min-height: auto;  
+  }
+`;
 
 const Container = styled.div`
   width: 75%;
@@ -13,32 +35,17 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  margin: 5rem 0rem 2rem 0rem;
+  margin: 3.5rem 0rem 0rem 0rem;
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
 
   @media (max-width: 48em) {
-    width: 93%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-
-/*     & > *:last-child {
-      & > *:first-child {
-        margin-top: 0;
-      }
-    } */
+    margin: 5.5rem 0rem 1rem 1.5rem;
+    width: 99%;
+    height: auto;
+    align-items: center;
   }
-`;
-
-const ImageContainer = styled.div`
-  width: 100%;
-  //text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Title = styled.h1`
@@ -46,12 +53,42 @@ const Title = styled.h1`
   text-transform: uppercase;
   color: ${(props) => props.theme.text};
 
-  margin: 1rem 0rem 1rem 6rem;
+  margin: 1rem 0rem 1rem 7rem;
 
   //border-bottom: 2px solid ${(props) => props.theme.text};
 
   @media (max-width: 48em) {
-    font-size: ${(props) => props.theme.fontxl};
+    font-size: ${(props) => props.theme.fontlg};
+    margin: 1rem 0rem 1rem 2rem;    
+  }
+`; 
+
+const ImageContainer = styled.div`
+  width: 100%;
+  //text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    width: 82%;
+  }
+
+  @media (max-width: 48em) {
+    display: none;    
+  }  
+`;
+
+const ImageContainerMobile = styled.div`
+  display: none;
+
+  @media (max-width: 48em) {
+    display: contents; 
+    
+    img{
+      width: 95%;
+      margin-bottom: 0.5rem;
+    }      
   }
 `; 
 
@@ -61,8 +98,11 @@ const Noticias = () => {
       <Container>
         <Title>PARCEIROS COM QUEM JÁ TRABALHAMOS</Title>                
         <ImageContainer>
-          <img src={img} alt="logo dos parceiros"/>
+          <img src={imgDesktop} alt="logo dos parceiros"/>
         </ImageContainer>
+        <ImageContainerMobile>
+          <img src={imgMobile} alt="logo dos parceiros"/>          
+        </ImageContainerMobile>
       </Container>
     </Section>
   );

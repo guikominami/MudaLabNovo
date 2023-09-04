@@ -1,21 +1,44 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import Section from "../elements/SectionComponent";
 import SubText from "../elements/SubTextComponent";
 
 import imgLara from "../../assets/images/equipe/lara.jpg";
 import imgGui from "../../assets/images/equipe/gui.jpg";
 
+const Section = styled.section`
+  min-height: 87vh;
+  //height: auto;
+  width: 98vw;
+  background-color: ${(props) => props.theme.body};
+
+  //background-color: yellow;
+
+  position: relative;
+  color: ${(props) => props.theme.text};
+
+  display: flex;
+  //vertical
+  justify-content: start;
+  //horizontal
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 48em) {
+    width: 100vw;
+    min-height: auto;  
+  }
+`;
+
 const Container = styled.div`
-  width: 90%;
+  width: 80%;
   min-height: 50vh;
   
   display: flex;
   align-content: center;
   justify-content: center;
 
-  margin: 5rem 0rem 2rem 0rem;
+  margin-top: 1.5rem;
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
@@ -34,8 +57,7 @@ const Title = styled.h1`
   text-transform: uppercase;
   color: ${(props) => props.theme.text};
 
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 4.5rem;
 
   background-color: white;
 
@@ -51,15 +73,12 @@ const Title = styled.h1`
 const Box = styled.div`
   width: 50%;
   height: auto;
-
-  margin-top: 0rem;
   margin-bottom: 1rem;
 
   @media (max-width: 48em) {
     flex-direction: column;
     
     margin-top: 1rem;
-    margin-bottom: 0rem;
 
     width: 90%;    
     //vertical  
@@ -73,12 +92,14 @@ const Box = styled.div`
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 45vh;
+  height: 38vh;
   
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  margin-top: 1rem;
 
   img{
     width: 80%;
@@ -118,8 +139,8 @@ const Equipe = () => {
           </ImageContainer>          
           <SubText>
             <b>Guilherme Kominami</b> é
-            tecnólogo em processamento de dados e pós-graduado em animação pelo
-            SENAC. Tem vasta experiência com programação e desenvolvimento de softwares e
+            graduado em processamento de dados e pós-graduado em animação. 
+            Tem vasta experiência com programação e desenvolvimento de softwares e
             trabalhou em grandes corporações até 2014, quando migrou para o
             Movimento Maker e se especializou em Novas Tecnologias abertas e de
             baixo custo.
