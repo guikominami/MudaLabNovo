@@ -136,8 +136,8 @@ const Metodologia = () => {
         <Box>
           <img src={img4} alt=""></img>
           <SubText>
-            Incentivamos a <b>construção de comunidades de aprendizagem</b> 
-            em contextos de vulnerabilidade social.
+            Incentivamos a <b>construção de comunidades de aprendizagem</b> em 
+            contextos de vulnerabilidade social.
           </SubText>
         </Box>
       </Container>

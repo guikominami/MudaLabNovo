@@ -16,7 +16,7 @@ const Section = styled.section`
   //flex-direction: column;
 
   @media (max-width: 48em) {
-    min-height: 100vh;
+    min-height: 70vh;
     justify-content: center;
   }
 `;
@@ -66,7 +66,7 @@ const Subtitle = styled.h2`
     width: 100%;
     text-align: left;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+
   }
 
   @media (max-width: 40em) {
