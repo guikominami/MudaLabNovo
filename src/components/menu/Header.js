@@ -46,7 +46,7 @@ const NavBarArea = styled.nav`
 `;
 
 const Header = () => {
-  const [transparent, setTransparent] = useState(true);
+  const [transparent, setTransparent] = useState(1);
 
   const { y } = useWindowScroll();
 
@@ -55,9 +55,9 @@ const Header = () => {
   useLayoutEffect(() => {
     //mudar a cor apenas na home
     if ((y > 160 && location.pathname === '/') || (y < 160  && location.pathname !== '/')) {
-      setTransparent(false);
+      setTransparent(0);
     } else if (y < 160 && location.pathname === '/') {
-      setTransparent(true);
+      setTransparent(1);
     }
 
   }, [y, location.pathname]);  

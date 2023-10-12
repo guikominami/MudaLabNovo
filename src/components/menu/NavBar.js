@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { styled } from "styled-components";
 
 import { dataItemsMenu } from './dataMenu';
@@ -41,16 +41,85 @@ const Menu = styled.ul`
   }
 `;
 
+const HamburgerMenu = styled.span`
+  width: ${(props) => (props.click ? "2rem" : "1.5rem")};
+  height: 3px;
+
+  background: ${(props) =>
+    props.transparent ? props.theme.body : props.theme.text};
+
+  position: absolute;
+  top: 2rem;
+  left: 90%;
+  transform: ${(props) =>
+    props.click
+      ? "translateX(-50%) rotate(90deg)"
+      : "translateX(-50%) rotate(0)"};
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media (max-width: 64em) {
+    /* 1024 px  */
+    display: flex;
+  }
+
+  &::after,
+  &::before {
+    content: " ";
+    width: ${(props) => (props.click ? "1rem" : "1.5rem")};
+    height: 3px;
+    right: ${(props) => (props.click ? "-2px" : "0")};
+    background: ${(props) =>
+      props.transparent ? props.theme.body : props.theme.text};
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  &::after {
+    top: ${(props) => (props.click ? "0.3rem" : "0.5rem")};
+    transform: ${(props) => (props.click ? "rotate(-48deg)" : "rotate(0)")};
+  }
+
+  &::before {
+    bottom: ${(props) => (props.click ? "0.3rem" : "0.5rem")};
+    transform: ${(props) => (props.click ? "rotate(48deg)" : "rotate(0)")};
+  }
+`;
+
 const NavBar = ({ transparent }) => {
+  const [click, setClick] = useState(0);
+
+  const SubMenuItemClickHandler = () => {
+    setClick(0);
+  }
+
   return (
-    <Menu>
-      {dataItemsMenu.map((menu, index) => {
-        return(
-          <MenuItems items={menu} key={index} transparent={transparent}/>
-        );
-      })}
-      <SocialMediaMenu transparent={transparent}/>
-    </Menu>
+    <>
+      <HamburgerMenu
+        transparent={transparent}
+        click={click}
+        onClick={() => setClick(!click)}        
+      >    
+      </HamburgerMenu>       
+      <Menu click={click}>
+        {dataItemsMenu.map((menu, index) => {
+          return(
+            <MenuItems 
+              items={menu} 
+              key={index} 
+              transparent={transparent}
+              click={SubMenuItemClickHandler}
+            />
+          );
+        })}
+        <SocialMediaMenu transparent={transparent}/>
+      </Menu>    
+    </> 
   )
 }
 

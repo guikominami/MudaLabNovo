@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Dropdown from "./Dropdown";
+import SubMenuItemMobile from "./SubMenuItemMobile";
 
 const MenuItem = styled.li`
   margin: 0 1rem;
@@ -48,7 +49,7 @@ const MenuItem = styled.li`
   }
 `;
 
-const MenuItems = ({ items, transparent }) => {
+const MenuItems = ({ items, transparent, click }) => {
   const [dropdownOpen, setDropDownOpen] = useState(false);
   const [menuItemId, setMenuItemId] = useState("");
 
@@ -83,7 +84,11 @@ const MenuItems = ({ items, transparent }) => {
   };
 
   return (
-    <MenuItem transparent={transparent} ref={ref}>
+    <MenuItem 
+      transparent={transparent} 
+      ref={ref} 
+      onClick={click}      
+    >
       {items.submenu ? (
         <span
           type="menu"
@@ -96,6 +101,9 @@ const MenuItems = ({ items, transparent }) => {
             open={dropdownOpen}
             close={CloseDropDown}
           />
+          <SubMenuItemMobile
+            submenus={items.submenu}
+          />          
         </span>
       ) : (
         <Link type="menu" id={items.title} to={items.url}>
