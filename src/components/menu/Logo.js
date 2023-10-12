@@ -20,10 +20,10 @@ const LogoContainer = styled.div`
   }
 `
 
-const Logo = ({isTransparent}) => {
+const Logo = ({transparent}) => {
   return (
     <LogoContainer >
-      <img src={isTransparent ? logo_white : logo_color} alt="logo com descrição MudaLab" />
+      <img src={transparent ? logo_white : logo_color} alt="logo com descrição MudaLab" />
       <Link to="/" />
     </LogoContainer>
   );

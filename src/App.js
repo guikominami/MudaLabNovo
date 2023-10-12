@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import { light } from "./styles/Themes";
 
-import Navigation from "./components/structure/Navigation";
+import Header from "./components/menu/Header";
 import Footer from "./components/structure/Footer";
 
 import Home from "./components/pages/Home";
@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
       <GlobalStyles />
       <ThemeProvider theme={light}>
-      <Navigation />                
+      <Header />                
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/laboratorios' element={<LabTec/>}/>
