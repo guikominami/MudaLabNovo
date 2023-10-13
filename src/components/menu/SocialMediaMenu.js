@@ -14,8 +14,7 @@ const MenuArea = styled.div`
 `;
 
 const SocialMediaMenuMobile = styled.div`
-  display: flex;
-  margin-left: 2rem;
+  display: none;
 
   @media (max-width: 64em) {
     display: flex;

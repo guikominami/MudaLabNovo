@@ -15,7 +15,7 @@ export const dataItemsMenu = [
         url: '/educacao'
       },
       {
-        title: 'ROBÓTICA E PROGRAMAÇÃO',
+        title: 'PROGRAMAÇÃO E ROBÓTICA',
         url: '/robotica'
       },
       {

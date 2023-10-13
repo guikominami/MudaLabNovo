@@ -42,6 +42,7 @@ const MenuItem = styled.li`
     margin: 1rem 0;
     width: 90%;
     color: ${(props) => props.theme.text};
+    font-weight: 600;
     text-shadow: none;
     &::after {
       display: none;

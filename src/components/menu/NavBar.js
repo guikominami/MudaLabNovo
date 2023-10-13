@@ -50,7 +50,7 @@ const HamburgerMenu = styled.span`
 
   position: absolute;
   top: 2rem;
-  left: 90%;
+  left: 88%;
   transform: ${(props) =>
     props.click
       ? "translateX(-50%) rotate(90deg)"
@@ -103,8 +103,9 @@ const NavBar = ({ transparent }) => {
       <HamburgerMenu
         transparent={transparent}
         click={click}
-        onClick={() => setClick(!click)}        
-      >    
+        onClick={() => setClick(prev => !prev)}        
+      >
+        &nbsp;
       </HamburgerMenu>       
       <Menu click={click}>
         {dataItemsMenu.map((menu, index) => {
