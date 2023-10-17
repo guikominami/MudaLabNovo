@@ -16,7 +16,7 @@ const Section = styled.section`
   //flex-direction: column;
 
   @media (max-width: 48em) {
-    min-height: 70vh;
+    min-height: 80vh;
     justify-content: center;
   }
 `;
