@@ -13,8 +13,8 @@ import arrow from "../../assets/icons/arrow.svg";
 
 const Container = styled.div`
 
-  width: 65vw;
-  height: 85vh;
+  width: 60vw;
+  height: 80vh;
 
   @media (max-width: 48em) {
     height: 45vh;
