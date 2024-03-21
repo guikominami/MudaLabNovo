@@ -5,7 +5,12 @@ import CarouselTutorial from "../structure/CarouselTutorial";
 import SectionComponent from "../elements/SectionComponent";
 
 import { TUTORIAL_ENERGIA_SOLAR_DATA } from "../../assets/data/imagesInfo";
-import tutorial_lanterna_solar from "../../assets/tutoriais/lanterna_solar/lanterna_solar.jpg";
+import tutorial_lanterna_solar from "../../assets/tutoriais/lanterna_solar.jpg";
+import tutorial_robo from "../../assets/tutoriais/roboDC.jpg";
+import tutorial_luminosidade from "../../assets/tutoriais/SensorLuminosidadeRele.jpg";
+import tutorial_presenca_luminosidade from "../../assets/tutoriais/SensorPresencaLuminosidadeRele.jpg";
+import tutorial_presenca from "../../assets/tutoriais/SensorPresencaRele.jpg";
+import tutorial_umidade from "../../assets/tutoriais/SensorUmidadeLed.jpg";
 
 const EspacoInicial = styled.div`
   min-height: 10vh;
@@ -34,28 +39,6 @@ const Container = styled.div`
 
     flex-direction: column;
     margin: 5.5rem 0rem 1rem 0rem;
-  }
-`;
-
-const Box = styled.div`
-  width: 80%;
-
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
-  //display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 48em) {
-    display: flex;
-
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 `;
 
@@ -148,7 +131,52 @@ const Tutoriais = () => {
         <ImageContainer>
           <img src={tutorial_lanterna_solar} alt="link" />
         </ImageContainer>
-      </Container>      
+      </Container> 
+      <Title>Roboino</Title>
+      <SubText>
+        Robô com motores controlado por bluetooth.
+      </SubText>      
+      <Container>
+        <ImageContainer>
+          <img src={tutorial_robo} alt="link" />
+        </ImageContainer>
+      </Container>     
+      <Title>Sensor de luminosidade</Title>
+      <SubText>
+        Sensor de luminosidade.
+      </SubText>      
+      <Container>
+        <ImageContainer>
+          <img src={tutorial_luminosidade} alt="link" />
+        </ImageContainer>
+      </Container>   
+      <Title>Sensor de presença e luminosidade</Title>
+      <SubText>
+        Sensor de presença e luminosidade.
+      </SubText>      
+      <Container>
+        <ImageContainer>
+          <img src={tutorial_presenca_luminosidade} alt="link" />
+        </ImageContainer>
+      </Container>   
+      <Title>Sensor de presença</Title>
+      <SubText>
+        Sensor de presença.
+      </SubText>      
+      <Container>
+        <ImageContainer>
+          <img src={tutorial_presenca} alt="link" />
+        </ImageContainer>
+      </Container>        
+      <Title>Sensor de umidade</Title>
+      <SubText>
+        Sensor de umidade.
+      </SubText>      
+      <Container>
+        <ImageContainer>
+          <img src={tutorial_umidade} alt="link" />
+        </ImageContainer>
+      </Container>    
     </SectionComponent>
   );
 };
