@@ -2,25 +2,25 @@ export const COVER_DATA = [
   {
     id: 1,
     image: require("../../assets/images/carousel/carousel1.jpg"),
-    text: "Experimentar as tecnologias de ponta de maneira prática.",    
+    text: "Experimentar as tecnologias de ponta de maneira prática.",
   },
   {
-    id: 2,    
+    id: 2,
     image: require("../../assets/images/carousel/carousel2.jpg"),
     text: "OMEC - Literatura e games se encontram.",
   },
   {
-    id: 3,    
+    id: 3,
     image: require("../../assets/images/carousel/carousel3.jpg"),
-    text: "Movimento Maker no programa 'Como será' da Rede Globo.",    
+    text: "Movimento Maker no programa 'Como será' da Rede Globo.",
   },
   {
-    id: 4,    
+    id: 4,
     image: require("../../assets/images/carousel/carousel4.jpg"),
     text: "Robótica nas praças públicas - Circuito Sesc 2022.",
   },
   {
-    id: 5,    
+    id: 5,
     image: require("../../assets/images/carousel/carousel5.jpg"),
     text: "Horta e poste solar construídos pela comunidade.",
   },
@@ -28,12 +28,12 @@ export const COVER_DATA = [
     id: 6,
     image: require("../../assets/images/carousel/carousel6.jpg"),
     text: "Processo de participação coletiva.",
-  },  
+  },
   {
     id: 7,
     image: require("../../assets/images/carousel/carousel7.jpg"),
     text: "Robótica na quebrada - Tecnologia de ponta fora dos grandes eventos.",
-  },  
+  },
   {
     id: 8,
     image: require("../../assets/images/carousel/carousel8.jpg"),
@@ -53,7 +53,7 @@ export const COVER_DATA = [
     id: 11,
     image: require("../../assets/images/carousel/carousel11.jpg"),
     text: "Aprender na prática.",
-  },     
+  },
   {
     id: 12,
     image: require("../../assets/images/carousel/carousel12.jpg"),
@@ -63,7 +63,7 @@ export const COVER_DATA = [
     id: 13,
     image: require("../../assets/images/carousel/carousel13.jpg"),
     text: "Usar a tecnologia de fabricação digital para trazer o virtual ao mundo real.",
-  },  
+  },
 ];
 
 export const MPA_DATA = [
@@ -263,78 +263,83 @@ export const LABTEC = [
   {
     id: 10,
     image: require("../../assets/images/labtec/lab9.jpg"),
-    text: "Protótipo Colaborativo: TECNOlixeira - Arduino e sensores " + 
-          "de presença acionados com os objetos inseridos nos buracos.",
-  },     
+    text:
+      "Protótipo Colaborativo: TECNOlixeira - Arduino e sensores " +
+      "de presença acionados com os objetos inseridos nos buracos.",
+  },
 ];
 
 export const VIDEOS = [
   {
     id: 2,
     video: "https://www.youtube.com/embed/T7vy4TJXJDs",
-    text: "O OMEC é uma leitura-experiência que estimula a reflexão sobre o livro 1984, de " + 
-          "George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
-    title: "OMEC - Objeto Multissensorial de Experiência Colaborativa"
+    text:
+      "O OMEC é uma leitura-experiência que estimula a reflexão sobre o livro 1984, de " +
+      "George Orwell e a realidade que estamos vivendo em nossa sociedade atual.",
+    title: "OMEC - Objeto Multissensorial de Experiência Colaborativa",
   },
   {
     id: 3,
     video: "https://www.youtube.com/embed/pXisV3B-6FM",
-    text: "O que é e de onde veio esse tal de Movimento Maker? Apesar do nome em inglês ele está " + 
-          "mais perto de nós do que imaginamos. Pode ter certeza que depois de assistir este vídeo, " + 
-          "você perceberá que também é um maker.",
-    title: "Movimento Maker"    
+    text:
+      "O que é e de onde veio esse tal de Movimento Maker? Apesar do nome em inglês ele está " +
+      "mais perto de nós do que imaginamos. Pode ter certeza que depois de assistir este vídeo, " +
+      "você perceberá que também é um maker.",
+    title: "Movimento Maker",
   },
   {
     id: 4,
     video: "https://www.youtube.com/embed/zla1tkB5Bww",
-    text: "Quais foram as revoluções tecnológicas que tornaram possível o Movimento Maker? " + 
-          "O que podemos fazer para criar um movimento com a cara do Brasil?",
-    title: "Movimento Maker"    
+    text:
+      "Quais foram as revoluções tecnológicas que tornaram possível o Movimento Maker? " +
+      "O que podemos fazer para criar um movimento com a cara do Brasil?",
+    title: "Movimento Maker",
   },
   {
     id: 5,
     video: "https://www.youtube.com/embed/-U9EqWTygqc",
-    text: "Em 2020 tivemos um desafio de transformar a formação Materiais " +
-          "Pedagógicos Acessíveis em um formato online. ",
-    title: "Materiais Pedagógicos Acessíveis Online 2020"    
+    text:
+      "Em 2020 tivemos um desafio de transformar a formação Materiais " +
+      "Pedagógicos Acessíveis em um formato online. ",
+    title: "Materiais Pedagógicos Acessíveis Online 2020",
   },
   {
     id: 6,
     video: "https://www.youtube.com/embed/ddqEGVhnEJY",
     text: "Fab Lab Livre SP – Parceria constante",
-    title: "Fab Lab Livre SP – Parceria constante"    
-  }, 
+    title: "Fab Lab Livre SP – Parceria constante",
+  },
   {
     id: 8,
     video: "https://www.youtube.com/embed/_C5fMQhnz-4",
     text: "Tok Math - o jogo da matemática.",
-    title: "Tok Math - o jogo da matemática."    
+    title: "Tok Math - o jogo da matemática.",
   },
   {
     id: 9,
     video: "https://www.youtube.com/embed/53eRk54CxO0",
     text: "Boneco interativo para ensinar sobre alimentação saudável.",
-    title: "Boneco interativo para ensinar sobre alimentação saudável."    
+    title: "Boneco interativo para ensinar sobre alimentação saudável.",
   },
   {
     id: 10,
     video: "https://www.youtube.com/embed/ghMeI6iIw0I",
     text: "Sistema respiratório desenvolvido para ensinar os tipos de respiração.",
-    title: "Sistema respiratório"    
-  },    
+    title: "Sistema respiratório",
+  },
   {
     id: 11,
     video: "https://www.youtube.com/embed/quMpL83vIGY",
     text: "Jogo da sustentabilidade.",
-    title: "Jogo da sustentabilidade"    
-  }, 
+    title: "Jogo da sustentabilidade",
+  },
   {
     id: 12,
     video: "https://www.youtube.com/embed/zLGv70V6Hq0",
     text: "Teatro de Fantoches com Painel Sonoro.",
-    title: "Teatro de Fantoches"    
-  }, 
-]
+    title: "Teatro de Fantoches",
+  },
+];
 
 export const COVER_CAROUSEL = [
   {
@@ -342,11 +347,11 @@ export const COVER_CAROUSEL = [
     image: require("../../assets/images/cover_carousel/cover_carousel1.jpg"),
   },
   {
-    id: 2,    
+    id: 2,
     image: require("../../assets/images/cover_carousel/cover_carousel2.jpg"),
   },
   {
-    id: 3,    
+    id: 3,
     image: require("../../assets/images/cover_carousel/cover_carousel3.jpg"),
   },
   {
@@ -356,12 +361,12 @@ export const COVER_CAROUSEL = [
   {
     id: 5,
     image: require("../../assets/images/cover_carousel/cover_carousel5.jpg"),
-  },    
+  },
   {
     id: 6,
     image: require("../../assets/images/cover_carousel/cover_carousel6.jpg"),
-  },    
-]
+  },
+];
 
 export const COVER_CAROUSEL_MOBILE = [
   {
@@ -369,11 +374,11 @@ export const COVER_CAROUSEL_MOBILE = [
     image: require("../../assets/images/cover_carousel_mobile/cover_carousel_mobile1.jpg"),
   },
   {
-    id: 2,    
+    id: 2,
     image: require("../../assets/images/cover_carousel_mobile/cover_carousel_mobile2.jpg"),
   },
   {
-    id: 3,    
+    id: 3,
     image: require("../../assets/images/cover_carousel_mobile/cover_carousel_mobile3.jpg"),
   },
   {
@@ -383,12 +388,12 @@ export const COVER_CAROUSEL_MOBILE = [
   {
     id: 5,
     image: require("../../assets/images/cover_carousel_mobile/cover_carousel_mobile5.jpg"),
-  },    
+  },
   {
     id: 6,
     image: require("../../assets/images/cover_carousel_mobile/cover_carousel_mobile6.jpg"),
-  },    
-]
+  },
+];
 
 export const TUTORIAL_ENERGIA_SOLAR_DATA = [
   {
@@ -396,23 +401,91 @@ export const TUTORIAL_ENERGIA_SOLAR_DATA = [
     image: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
   },
   {
-    id: 2,    
+    id: 2,
     image: require("../../assets/tutoriais/energia_solar/energia_solar2.jpg"),
   },
   {
-    id: 3,    
+    id: 3,
     image: require("../../assets/tutoriais/energia_solar/energia_solar3.jpg"),
   },
   {
-    id: 4,    
+    id: 4,
     image: require("../../assets/tutoriais/energia_solar/energia_solar4.jpg"),
-  },  
+  },
   {
-    id: 5,    
+    id: 5,
     image: require("../../assets/tutoriais/energia_solar/energia_solar5.jpg"),
-  },  
+  },
   {
-    id: 6,    
+    id: 6,
     image: require("../../assets/tutoriais/energia_solar/energia_solar6.jpg"),
-  },  
-]
+  },
+];
+
+export const TUTORIAL_DATA = [
+  {
+    id: 1,
+    name: "Energia Solar",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Placa solar 10V",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Controlador de carga",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar2.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar3.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar4.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar5.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/energia_solar/energia_solar6.jpg"),
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Lanterna Solar",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  },
+];

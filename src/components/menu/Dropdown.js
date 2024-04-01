@@ -6,7 +6,7 @@ const SubMenu = styled.span`
   display: ${(props) => (props.open ? "flex" : "none")};
 
   width: auto;
-  height: 7rem;
+  height: 8rem;
 
   background-color: rgb(0 0 0 / 40%);
   color: ${(props) => props.theme.body};
