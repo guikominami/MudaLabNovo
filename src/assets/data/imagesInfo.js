@@ -488,4 +488,129 @@ export const TUTORIAL_DATA = [
       },
     ],
   },
+  {
+    id: 3,
+    name: "Roboino",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  },  
+  {
+    id: 4,
+    name: "Sensor de luminosidade",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  },  
+  {
+    id: 5,
+    name: "Sensor de presença e luminosidade",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  },  
+  {
+    id: 6,
+    name: "Sensor de presença",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  }, 
+  {
+    id: 7,
+    name: "Sensor de umidade",
+    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    description:
+      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
+      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+    needs_list: [
+      {
+        name: "Led 2mm",
+        photo: "",
+        link: "",
+      },
+      {
+        name: "Resistor 10kohm",
+        photo: "",
+        link: "",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+      },
+    ],
+  },    
 ];

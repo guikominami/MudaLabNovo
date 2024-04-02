@@ -1,16 +1,16 @@
 import React from "react";
 
-const BulletsList = ({ data_list }) => {
-
-  console.log(data_list);
+const BulletsList = ({ data }) => {
+  console.log("bullets");
+  console.log(data);
 
   return (
     <>
       <ul>
-{/*         {data_list.map((item) => (
+        {data.map((item) => (
           <li>{item.name}</li>
-        ))}   */}    
-      </ul>
+        ))}
+      </ul> 
     </>
   );
 };

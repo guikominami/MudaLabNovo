@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { styled } from "styled-components";
 import { Outlet } from "react-router-dom";
 
@@ -8,7 +9,7 @@ import TutoriaisConteudo from "./TutoriaisConteudo";
 import { TUTORIAL_DATA } from "../../assets/data/imagesInfo";
 
 const EspacoInicial = styled.div`
-  min-height: 10vh;
+  min-height: 0vh;
 
   @media (max-width: 48em) {
     flex-direction: column;
@@ -22,7 +23,7 @@ const Title = styled.h1`
   text-transform: uppercase;
   color: ${(props) => props.theme.text};
 
-  margin: 1rem 0rem 0rem 14rem;
+  margin: 0rem 0rem 0rem 14rem;
 
   position: relative;
   color: ${(props) => props.theme.text};
@@ -55,7 +56,20 @@ const SubText = styled.p`
   }
 `;
 
+const Line = styled.div`
+  box-shadow: 1px 5px black;
+  width: 70%;
+  height: 1px;
+  margin-bottom: 1rem;
+`;
+
 const Tutoriais = () => {
+
+  const [idItem, setIdItem] = useState();
+
+  console.log(idItem);
+  console.log(TUTORIAL_DATA[idItem]);
+
   return (
     <SectionComponent>
       <Outlet />
@@ -72,24 +86,20 @@ const Tutoriais = () => {
       <SubText>
         Com este tutorial, você poderá construir as seguintes tecnologias:
         <ul>
-          <li>sistema solar offgrid</li>
-          <li>lanterna solar</li>
-          <li>Robô com motores controlado por bluetooth</li>
-          <li>Sensor de luminosidade</li>
-          <li>Sensor de presença e luminosidade</li>
-          <li>Sensor de presença</li>
-          <li>Sensor de umidade</li>
+        {TUTORIAL_DATA.map((item, index) => (
+          <li onClick={() => setIdItem(index)}>
+              {item.name} + " " + {index}
+          </li>
+        ))}      
         </ul>
       </SubText>
-      {TUTORIAL_DATA.map((item) => (
-        <TutoriaisConteudo
-          name={item.name}
-          description={item.description}          
-          photo={item.photo}
-          needs={item.needs_list}
-          steps={item.steps}          
-        />
-      ))}
+      <Line />
+      {
+        idItem >= 0 ?
+        <TutoriaisConteudo data={TUTORIAL_DATA[idItem]}/>
+        :
+        <></>
+      }      
     </SectionComponent>
   );
 };

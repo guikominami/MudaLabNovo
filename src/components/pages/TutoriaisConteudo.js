@@ -87,28 +87,21 @@ const ImageContainer = styled.div`
   }
 `;
 
-const TutoriaisConteudo = ({ name, description, photo, needs, steps }) => {
-
-    console.log(name);
-    console.log(description);
-    console.log(photo);
-    console.log(needs);
-    console.log(steps);
-
+const TutoriaisConteudo = ({ data }) => {
   return (
     <>
-      <Title>{name}</Title>
-      <SubText>{description}</SubText>
+      <Title>{data.name}</Title>
+      <SubText>{data.description}</SubText>
       <Container>
         <ImageContainer>
-          <img src={photo} alt="link" />
+          <img src={data.photo} alt="link" />
         </ImageContainer>
       </Container>  
-      <SubText>O que vai precisar</SubText>
-        <BulletsList data={needs}/>
-      <SubText>Esquema eletrônico</SubText>             
+      <Title>O que vai precisar</Title>
+        <BulletsList data={data.needs_list}/>
+      <Title>Esquema eletrônico</Title>             
       <Container>
-        <CarouselTutorial imagesCarousel={steps} />
+        <CarouselTutorial imagesCarousel={data.steps} />
       </Container>
     </>
   );

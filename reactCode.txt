@@ -1,0 +1,16 @@
+      {TUTORIAL_DATA.map((item) => (
+        <TutoriaisConteudo
+          name={item.name}
+          description={item.description}          
+          photo={item.photo}
+          needs={item.needs_list}
+          steps={item.steps}          
+        />
+      ))}
+
+
+          <li>Robô com motores controlado por bluetooth</li>
+          <li>Sensor de luminosidade</li>
+          <li>Sensor de presença e luminosidade</li>
+          <li>Sensor de presença</li>
+          <li>Sensor de umidade</li>
