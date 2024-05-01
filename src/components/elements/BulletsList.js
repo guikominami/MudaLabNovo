@@ -1,9 +1,6 @@
 import React from "react";
 
 const BulletsList = ({ data }) => {
-  console.log("bullets");
-  console.log(data);
-
   return (
     <>
       <ul>

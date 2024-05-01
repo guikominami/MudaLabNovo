@@ -65,17 +65,17 @@ const SubText = styled.p`
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  margin: 1rem 0 1rem 0;
+  margin: 1rem;
 
   img {
-    width: 80%;
+    width: 100%;
   }
 
   @media (max-width: 48em) {
@@ -87,6 +87,15 @@ const ImageContainer = styled.div`
   }
 `;
 
+const NavbarLink = styled.a`
+    color: blue;
+    text-decoration: none;
+    /* Changing the color */
+    &:hover {
+        color: red;
+    }
+`;
+
 const TutoriaisConteudo = ({ data }) => {
   return (
     <>
@@ -96,13 +105,19 @@ const TutoriaisConteudo = ({ data }) => {
         <ImageContainer>
           <img src={data.photo} alt="link" />
         </ImageContainer>
-      </Container>  
-      <Title>O que vai precisar</Title>
+      </Container>
+      <Title>O que vai precisar</Title>        
+      <SubText>
         <BulletsList data={data.needs_list}/>
+      </SubText>      
       <Title>Esquema eletrônico</Title>             
       <Container>
         <CarouselTutorial imagesCarousel={data.steps} />
       </Container>
+      <Title>Código</Title>    
+      <SubText>
+        <NavbarLink href={data.code_link}>Link</NavbarLink> para o código do Arduino.
+      </SubText>
     </>
   );
 };

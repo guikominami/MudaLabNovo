@@ -9,7 +9,7 @@ import TutoriaisConteudo from "./TutoriaisConteudo";
 import { TUTORIAL_DATA } from "../../assets/data/imagesInfo";
 
 const EspacoInicial = styled.div`
-  min-height: 0vh;
+  min-height: 12vh;
 
   @media (max-width: 48em) {
     flex-direction: column;
@@ -63,6 +63,15 @@ const Line = styled.div`
   margin-bottom: 1rem;
 `;
 
+const List = styled.li`
+    color: darkblue; 
+    text-decoration: none;
+    /* Changing the color */
+    &:hover {
+        color: red;
+    }
+`;
+
 const Tutoriais = () => {
 
   const [idItem, setIdItem] = useState();
@@ -87,9 +96,9 @@ const Tutoriais = () => {
         Com este tutorial, você poderá construir as seguintes tecnologias:
         <ul>
         {TUTORIAL_DATA.map((item, index) => (
-          <li onClick={() => setIdItem(index)}>
-              {item.name} + " " + {index}
-          </li>
+          <List onClick={() => setIdItem(index)}>
+              {item.name}
+          </List>
         ))}      
         </ul>
       </SubText>

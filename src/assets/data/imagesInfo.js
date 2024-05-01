@@ -395,7 +395,7 @@ export const COVER_CAROUSEL_MOBILE = [
   },
 ];
 
-export const TUTORIAL_ENERGIA_SOLAR_DATA = [
+/* export const TUTORIAL_ENERGIA_SOLAR_DATA = [
   {
     id: 1,
     image: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
@@ -420,13 +420,13 @@ export const TUTORIAL_ENERGIA_SOLAR_DATA = [
     id: 6,
     image: require("../../assets/tutoriais/energia_solar/energia_solar6.jpg"),
   },
-];
+]; */
 
 export const TUTORIAL_DATA = [
   {
     id: 1,
     name: "Energia Solar",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/energia_solar.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -444,29 +444,30 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar1.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar2.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar2.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar3.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar3.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar4.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar4.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar5.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar5.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/energia_solar/energia_solar6.jpg"),
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar6.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",   
   },
   {
     id: 2,
     name: "Lanterna Solar",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/lanterna_solar.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -484,14 +485,15 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/lanterna_solar.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",      
   },
   {
     id: 3,
     name: "Roboino",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/roboino.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -509,14 +511,15 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/roboino.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",     
   },  
   {
     id: 4,
-    name: "Sensor de luminosidade",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    name: "Sensor de luminosidade e relé",
+    photo: require("../../assets/tutoriais/descricao/sensor_luminosidade_rele.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -534,14 +537,15 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/sensor_luminosidade_rele.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",      
   },  
   {
     id: 5,
     name: "Sensor de presença e luminosidade",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -559,14 +563,15 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/sensor_presenca_luminosidade.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",   
   },  
   {
     id: 6,
     name: "Sensor de presença",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -584,14 +589,15 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/sensor_presenca_led.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",     
   }, 
   {
     id: 7,
     name: "Sensor de umidade",
-    photo: require("../../assets/tutoriais/energia_solar/energia_solar1.jpg"),
+    photo: require("../../assets/tutoriais/descricao/sensor_umidade.jpg"),
     description:
       "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
       "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
@@ -609,8 +615,9 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/lanterna_solar.jpg"),
+        image: require("../../assets/tutoriais/passos/sensor_umidade.jpg"),
       },
     ],
+    code_link:"https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",      
   },    
 ];
