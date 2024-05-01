@@ -69,15 +69,13 @@ const List = styled.li`
     /* Changing the color */
     &:hover {
         color: red;
+        cursor: pointer;
     }
 `;
 
 const Tutoriais = () => {
 
   const [idItem, setIdItem] = useState();
-
-  console.log(idItem);
-  console.log(TUTORIAL_DATA[idItem]);
 
   return (
     <SectionComponent>
@@ -93,10 +91,10 @@ const Tutoriais = () => {
         conhecimento.
       </SubText>
       <SubText>
-        Com este tutorial, você poderá construir as seguintes tecnologias:
+        Com estes tutoriais, você poderá construir as seguintes tecnologias (clique nos links abaixo para acessá-los):
         <ul>
         {TUTORIAL_DATA.map((item, index) => (
-          <List onClick={() => setIdItem(index)}>
+          <List key={item.index} onClick={() => setIdItem(index)}>
               {item.name}
           </List>
         ))}      

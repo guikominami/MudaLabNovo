@@ -30,7 +30,7 @@ const Title = styled.h1`
   text-transform: uppercase;
   color: ${(props) => props.theme.text};
 
-  margin: 1rem 0rem 0rem 14rem;
+  margin: 1.5rem 0rem 0rem 14rem;
 
   position: relative;
   color: ${(props) => props.theme.text};
@@ -87,12 +87,13 @@ const ImageContainer = styled.div`
   }
 `;
 
-const NavbarLink = styled.a`
+const Link = styled.a`
     color: blue;
     text-decoration: none;
     /* Changing the color */
     &:hover {
         color: red;
+        cursor: pointer;
     }
 `;
 
@@ -109,15 +110,19 @@ const TutoriaisConteudo = ({ data }) => {
       <Title>O que vai precisar</Title>        
       <SubText>
         <BulletsList data={data.needs_list}/>
-      </SubText>      
+      </SubText>  
+      {data.code_link && (
+        <>
+          <Title>Código</Title>    
+          <SubText>
+            <Link href={data.code_link}>Link</Link> para o código do Arduino.
+          </SubText>
+        </>  
+      )}        
       <Title>Esquema eletrônico</Title>             
       <Container>
         <CarouselTutorial imagesCarousel={data.steps} />
       </Container>
-      <Title>Código</Title>    
-      <SubText>
-        <NavbarLink href={data.code_link}>Link</NavbarLink> para o código do Arduino.
-      </SubText>
     </>
   );
 };
