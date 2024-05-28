@@ -113,12 +113,13 @@ const TutoriaisConteudo = ({ data }) => {
       </SubText>
       {data.code_link && (
         <>
-          <Title>Código</Title>
+          <Title>CÓDIGO PARA PROGRAMAR O ARDUINO</Title>
           <SubText>
+            Clique no {" "} 
             <Link href={data.code_link} target="_blank">
-              Link
-            </Link>{" "}
-            para o código do Arduino.
+              link
+            </Link>{" "}   
+            para acessar o código.
           </SubText>
         </>
       )}

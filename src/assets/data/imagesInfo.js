@@ -428,7 +428,9 @@ export const TUTORIAL_DATA = [
     name: "Sistema de Energia Solar",
     photo: require("../../assets/tutoriais/descricao/energia_solar.jpg"),
     description:
-      "São sistemas compostos por paineis fotovoltaicos que captam e concentram a luz do sol e transformam essa energia em eletricidade. Este dispositivo foi construído no sistema off grid, ou seja, não possui conexão com a rede pública de energia e consiste em um controlador de carga que recebe energia por meio da placa solar fotovoltaica e armazena a energia em uma bateria.",
+      "São sistemas compostos por paineis fotovoltaicos que captam e concentram a luz do sol e transformam essa energia em eletricidade. " + 
+      "Este dispositivo foi construído no sistema off grid, ou seja, não possui conexão com a rede pública de energia e consiste " + 
+      "em um controlador de carga que recebe energia por meio da placa solar fotovoltaica e armazena a energia em uma bateria.",
     needs_list: [
       {
         name: "Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
@@ -477,7 +479,7 @@ export const TUTORIAL_DATA = [
     name: "Lanterna Solar",
     photo: require("../../assets/tutoriais/descricao/lanterna_solar.jpg"),
     description:
-      "A lanterna solar é um dispositivo que armazena energia da luz do sol através de uma mini placa solar acoplada a uma bateria..",
+      "A lanterna solar é um dispositivo que armazena energia da luz do sol através de uma mini placa solar acoplada a uma bateria.",
     needs_list: [
       {
         name: "Suporte de pilha individual 18650",
@@ -542,8 +544,9 @@ export const TUTORIAL_DATA = [
     name: "Robô movido a arduino",
     photo: require("../../assets/tutoriais/descricao/roboino.jpg"),
     description:
-      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
-      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+      "O arduino é uma placa que permite enviar e receber informações de sistemas eletrônicos e, com isso, " + 
+      "construir protótipos com sensores, motores, iluminação, entre outros. É um sistema de baixo custo e open source. " +
+      "Neste projeto, a interface de desenvolvimento Arduino foi utilizada para a construção de robôs controlados por telemóvel/tablet.",
     needs_list: [
       {
         name: "Arduino Uno",
@@ -596,11 +599,49 @@ export const TUTORIAL_DATA = [
   },
   {
     id: 4,
+    name: "Sensor de presença",
+    photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
+    description:
+      "O sensor de presença é um dispositivo que é acionado quando detecta movimento. Ele foi utilizado neste projeto " + 
+      "para otimizar o sistema de energia solar e permitir que o sistema de luz fosse acionado somente quando houvesse movimento por perto.",
+    needs_list: [
+      {
+        name: "Arduino Uno",
+        photo: "",
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "Sensor de presença infra vermelho",
+        photo: "",
+        link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },
+      {
+        name: "Jumpers de conexão",
+        photo: "",
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },
+      {
+        name: "Led 5mm",
+        photo: "",
+        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/sensor_presenca_led.jpg"),
+      },
+    ],
+    code_link:
+      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
+  }, 
+  {
+    id: 5,
     name: "Sensor de luminosidade e relé",
     photo: require("../../assets/tutoriais/descricao/sensor_luminosidade_rele.jpg"),
     description:
-      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
-      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+      "O sensor de luminosidade é um dispositivo que detecta alterações na quantidade de luz em seu entorno. " +
+      "Neste projeto, o Arduino foi programado para quando o sensor de luminosidade detectar baixa intensidade de luz, " + 
+      "ou seja, quando estiver escuro, acender uma lâmpada por meio de um relê, que funciona como um interruptor.",
     needs_list: [
       {
         name: "Arduino Uno",
@@ -640,14 +681,14 @@ export const TUTORIAL_DATA = [
     ],
     code_link:
       "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
-  },
+  },  
   {
-    id: 5,
+    id: 6,
     name: "Sensor de presença e luminosidade",
     photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
     description:
-      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
-      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+      "Neste projeto, unimos o sensor de presença e o de luminosidade para otimizar o sistema de acendimento automático." +
+      "A lâmpada só acenderá quando for noite e detectar movimento.",
     needs_list: [
       {
         name: "Arduino Uno",
@@ -663,11 +704,6 @@ export const TUTORIAL_DATA = [
         name: "Sensor de presença infra vermelho",
         photo: "",
         link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
-      },
-      {
-        name: "Sensor de luminosidade",
-        photo: "",
-        link: "https://mauser.pt/catalog/product_info.php?products_id=096-4674",
       },
       {
         name: "Módulo relé 5V",
@@ -692,51 +728,14 @@ export const TUTORIAL_DATA = [
     ],
     code_link:
       "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
-  },
-  {
-    id: 6,
-    name: "Sensor de presença",
-    photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
-    description:
-      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
-      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
-    needs_list: [
-      {
-        name: "Arduino Uno",
-        photo: "",
-        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
-      },
-      {
-        name: "Sensor de presença infra vermelho",
-        photo: "",
-        link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
-      },
-      {
-        name: "Jumpers de conexão",
-        photo: "",
-        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
-      },
-      {
-        name: "Led 5mm",
-        photo: "",
-        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
-      },
-    ],
-    steps: [
-      {
-        image: require("../../assets/tutoriais/passos/sensor_presenca_led.jpg"),
-      },
-    ],
-    code_link:
-      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
-  },
+  }, 
   {
     id: 7,
     name: "Sensor de umidade",
     photo: require("../../assets/tutoriais/descricao/sensor_umidade.jpg"),
     description:
-      "O sistema solar off grid consiste de um controlador de carga que recebe energia por meio " +
-      "de uma placa solar fotovoltaica que armazena energia em uma bateria.",
+      "O sensor de umidade é utilizado para medir as variações de umidade da terra. Neste projeto, foi utilizado " + 
+      "para acionar o sistema de rega de plantas que está acoplado ao sistema de energia solar.",
     needs_list: [
       {
         name: "Arduino Uno",
@@ -767,4 +766,57 @@ export const TUTORIAL_DATA = [
     code_link:
       "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
   },
+  {
+    id: 8,
+    name: "Sistema de rega automático",
+    photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
+    description:
+      "O Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado." + 
+      "Uma bomba 12v puxa a água de um reservatório e leva até as floreiras por meio de uma mangueira." + 
+      "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
+    needs_list: [
+      {
+        name: "Arduino Uno",
+        photo: "",
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "Sensor de nível",
+        photo: "",
+        link: "https://www.reichelt.com/es/es/arduino-sensor-de-humedad-del-suelo-ard-sen-wet2-p282512.html?PROVID=2855&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIQFvG3fp6A1F-jKzqrnr2AnjY7o0uEYMrx5DbaC-hWp79CIqZCz0waAvmQEALw_wcB",
+      },
+      {
+        name: "Módulo relé 5V",
+        photo: "",
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
+      },
+      {
+        name: "Potenciômetro",
+        photo: "",
+        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },
+      {
+        name: "Display LCD OLED 128x32",
+        photo: "",
+        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },  
+      {
+        name: "Bomba 12v",
+        photo: "",
+        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },        
+      {
+        name: "Jumpers de conexão",
+        photo: "",
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/horta_automatizada.jpg"),
+      },
+    ],
+    code_link:
+      "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
+  },  
 ];

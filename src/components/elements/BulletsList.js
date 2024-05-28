@@ -30,24 +30,14 @@ const Box = styled.div`
   border: '2px solid #000';
   box-Shadow: 24;
   background-color: white;
+  padding: 1rem;
 
   img {
-    width: 50%;
+    width: 100%;
+    align-items: center;
   }
 
 `;
-
-/* const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-}; */
 
 const BulletsList = ({ data }) => {
   const [open, setOpen] = useState(false);

@@ -98,10 +98,10 @@ const Tutoriais = () => {
         <br></br>
         <br></br>        
         A fabricação destes protótipos pode levar em consideração
-        conhecimentos de eletrônica básica e elétrica (isso mesmo?). Entretanto,
+        conhecimentos de eletrônica básica, elétrica e programação. Entretanto,
         são sempre bem-vindas adaptações de acordo com a criatividade e o
         conhecimento da sua comunidade escolar para viabilizar a construção e o
-        aprimoramento do dispositivo. Com este tutorial, você poderá construir
+        aprimoramento do dispositivo. Com estes tutoriais, você poderá construir
         os seguintes protótipos tecnológicos:
         <ul>
           {TUTORIAL_DATA.map((item, index) => (

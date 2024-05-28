@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae88e9ce.css",
-    "main.js": "/static/js/main.9c7c3c91.js",
+    "main.js": "/static/js/main.aefab2c2.js",
     "static/js/787.06b636c2.chunk.js": "/static/js/787.06b636c2.chunk.js",
     "static/media/lara.jpg": "/static/media/lara.a30cd5fd309ae485bc23.jpg",
     "static/media/carousel12.jpg": "/static/media/carousel12.ba9c0ffee663336037f5.jpg",
@@ -9,11 +9,13 @@
     "static/media/robo1.jpg": "/static/media/robo1.7b3a47c6942ff9b33485.jpg",
     "static/media/gui.jpg": "/static/media/gui.a033d7ca7f382d238a94.jpg",
     "static/media/carousel13.jpg": "/static/media/carousel13.8327e185f2d6de01ecb7.jpg",
+    "static/media/bateria.png": "/static/media/bateria.9fc9f40ed53269d0df43.png",
     "static/media/robo4.jpg": "/static/media/robo4.28f05c5a717f3555557d.jpg",
     "static/media/robo6.jpg": "/static/media/robo6.50bc57af453dc8aca9ba.jpg",
     "static/media/sobre1.jpg": "/static/media/sobre1.29b79a2b5669c0bdcf53.jpg",
     "static/media/lab7.jpg": "/static/media/lab7.45e79f03dac763157ae7.jpg",
     "static/media/roboino.jpg": "/static/media/roboino.786dc0ddbdd6b0c17415.jpg",
+    "static/media/placa_solar.png": "/static/media/placa_solar.ce73c6dc57f587319d74.png",
     "static/media/cover_carousel1.jpg": "/static/media/cover_carousel1.2f21b1d4e63d917fa668.jpg",
     "static/media/lab8.jpg": "/static/media/lab8.fe2e13f7a4b0acc4abd3.jpg",
     "static/media/sobre2.jpg": "/static/media/sobre2.b6105ee553e8ac8a9625.jpg",
@@ -54,6 +56,7 @@
     "static/media/eco2.jpg": "/static/media/eco2.92cb1ef1570c4417e32e.jpg",
     "static/media/sensor_luminosidade_rele.jpg": "/static/media/sensor_luminosidade_rele.d182c52d5e017f2c494b.jpg",
     "static/media/cover_carousel6.jpg": "/static/media/cover_carousel6.6141ff00b11ec2eeebb2.jpg",
+    "static/media/horta_automatizada.jpg": "/static/media/horta_automatizada.a29f3ef839e51355b1f2.jpg",
     "static/media/cover_carousel_mobile4.jpg": "/static/media/cover_carousel_mobile4.c6856605103442c5cc20.jpg",
     "static/media/cover_carousel2.jpg": "/static/media/cover_carousel2.8356c5c544a48892f2f7.jpg",
     "static/media/eco1.jpg": "/static/media/eco1.c48e63ff135ce4c66a9b.jpg",
@@ -65,6 +68,7 @@
     "static/media/lab3.jpg": "/static/media/lab3.54261be644279fb1db4f.jpg",
     "static/media/parceirosMobile.jpg": "/static/media/parceirosMobile.f8105886ceedb6c94345.jpg",
     "static/media/cover_carousel_mobile5.jpg": "/static/media/cover_carousel_mobile5.e23b59b23c54ca617428.jpg",
+    "static/media/controlador.png": "/static/media/controlador.2b1203473ec4f02a983b.png",
     "static/media/cover_carousel_mobile3.jpg": "/static/media/cover_carousel_mobile3.9b5ac72c6f871199f7e0.jpg",
     "static/media/lab0.jpg": "/static/media/lab0.4ca833a5eba9e33b8dda.jpg",
     "static/media/carousel5.jpg": "/static/media/carousel5.656eca1248e408a7a861.jpg",
@@ -82,6 +86,7 @@
     "static/media/mpa9.jpg": "/static/media/mpa9.0bc3369ae90630c8ae60.jpg",
     "static/media/akaya-telivigala-telugu-400-normal.woff2": "/static/media/akaya-telivigala-telugu-400-normal.cc24af700d82d6ced8f6.woff2",
     "static/media/carousel10.jpg": "/static/media/carousel10.afbfe98b7ccd4541f90c.jpg",
+    "static/media/fio.png": "/static/media/fio.26273f7bf11eeeba081d.png",
     "static/media/carousel6.jpg": "/static/media/carousel6.dc66eb6c67b36e6976d4.jpg",
     "static/media/mpa12.jpg": "/static/media/mpa12.100bf5db485014b01da0.jpg",
     "static/media/mpa4.jpg": "/static/media/mpa4.81fe688d99bc5d075628.jpg",
@@ -110,11 +115,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.ae88e9ce.css.map": "/static/css/main.ae88e9ce.css.map",
-    "main.9c7c3c91.js.map": "/static/js/main.9c7c3c91.js.map",
+    "main.aefab2c2.js.map": "/static/js/main.aefab2c2.js.map",
     "787.06b636c2.chunk.js.map": "/static/js/787.06b636c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae88e9ce.css",
-    "static/js/main.9c7c3c91.js"
+    "static/js/main.aefab2c2.js"
   ]
 }
