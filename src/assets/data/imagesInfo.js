@@ -431,17 +431,17 @@ export const TUTORIAL_DATA = [
       "São sistemas compostos por paineis fotovoltaicos que captam e concentram a luz do sol e transformam essa energia em eletricidade. Este dispositivo foi construído no sistema off grid, ou seja, não possui conexão com a rede pública de energia e consiste em um controlador de carga que recebe energia por meio da placa solar fotovoltaica e armazena a energia em uma bateria.",
     needs_list: [
       {
-        name: "Placa solar 10W",
+        name: "Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
         photo: require("../../assets/tutoriais/componentes/placa_solar.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=1381_1382_3012&products_id=096-2261",
       },
       {
-        name: "Controlador de carga solar",
+        name: "Controlador de carga solar PWM 12V Lithium 10A",
         photo: require("../../assets/tutoriais/componentes/controlador.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-9403",
       },
       {
-        name: "Bateria Solar",
+        name: "Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
         photo: require("../../assets/tutoriais/componentes/bateria.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
       },

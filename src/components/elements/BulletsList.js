@@ -63,7 +63,7 @@ const BulletsList = ({ data }) => {
       <ul>
         {data.map((item) => (
           <li key={item.key}>
-            {item.name} - <Link onClick={handleOpen(item.photo)}>Open modal</Link>
+            {item.name} - <Link onClick={handleOpen(item.photo)}><img src={linkIcon} alt="link" /></Link>
             {/*             <Link href={item.link} target="_blank">
               <img src={linkIcon} alt="link" />
             </Link> */}
