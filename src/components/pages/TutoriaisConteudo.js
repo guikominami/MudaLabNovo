@@ -88,13 +88,13 @@ const ImageContainer = styled.div`
 `;
 
 const Link = styled.a`
-    color: blue;
-    text-decoration: none;
-    /* Changing the color */
-    &:hover {
-        color: red;
-        cursor: pointer;
-    }
+  color: blue;
+  text-decoration: none;
+  /* Changing the color */
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
 `;
 
 const TutoriaisConteudo = ({ data }) => {
@@ -107,19 +107,22 @@ const TutoriaisConteudo = ({ data }) => {
           <img src={data.photo} alt="link" />
         </ImageContainer>
       </Container>
-      <Title>O que vai precisar</Title>        
+      <Title>O que você vai precisar</Title>
       <SubText>
-        <BulletsList data={data.needs_list}/>
-      </SubText>  
+        <BulletsList data={data.needs_list} />
+      </SubText>
       {data.code_link && (
         <>
-          <Title>Código</Title>    
+          <Title>Código</Title>
           <SubText>
-            <Link href={data.code_link}>Link</Link> para o código do Arduino.
+            <Link href={data.code_link} target="_blank">
+              Link
+            </Link>{" "}
+            para o código do Arduino.
           </SubText>
-        </>  
-      )}        
-      <Title>Esquema eletrônico</Title>             
+        </>
+      )}
+      <Title>Esquema eletrônico</Title>
       <Container>
         <CarouselTutorial imagesCarousel={data.steps} />
       </Container>
