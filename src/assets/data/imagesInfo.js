@@ -428,7 +428,7 @@ export const TUTORIAL_DATA = [
     name: "Sistema de Energia Solar",
     photo: require("../../assets/tutoriais/descricao/energia_solar.jpg"),
     description:
-      "São sistemas compostos por paineis fotovoltaicos que captam e concentram a luz do sol e transformam essa energia em eletricidade. " + 
+      "São sistemas compostos por paineis fotovoltaicos que captam e concentram a luz do sol e transformam essa energia em eletricidade. \n \n" + 
       "Este dispositivo foi construído no sistema off grid, ou seja, não possui conexão com a rede pública de energia e consiste " + 
       "em um controlador de carga que recebe energia por meio da placa solar fotovoltaica e armazena a energia em uma bateria.",
     needs_list: [
@@ -559,7 +559,7 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-6807",
       },
       {
-        name: "4 Motores DC 3 a 6V e 4 rodas",
+        name: "04 Motores DC 3 a 6V e 04 rodas",
         photo: require("../../assets/tutoriais/componentes/motor.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7645",
       },
@@ -574,12 +574,12 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2560_2566&products_id=035-0687",
       },
       {
-        name: "2 pilhas 18650",
+        name: "02 pilhas 18650",
         photo: require("../../assets/tutoriais/componentes/bateria18650.png"),
         link: "https://mauser.pt/catalog/index.php?cPath=74_1011_215",
       },
       {
-        name: "Plug P4 macho e fêmea",
+        name: "01 Plug P4 macho e 01 fêmea",
         photo: require("../../assets/tutoriais/componentes/p4.png"),
         link: "https://es.aliexpress.com/item/1005005120174891.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005120174891&netw=x&device=c&albpg=&albpd=es1005005120174891&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIHZji9gfo0Oz4BatYTWrVesFW8NjfATHZHNQsZJz44NzAWgHR5410aAiUkEALw_wcB&gclsrc=aw.ds&aff_fcid=2c081672684a4877a499905fb4b89126-1714595533964-05090-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=2c081672684a4877a499905fb4b89126-1714595533964-05090-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
@@ -632,7 +632,7 @@ export const TUTORIAL_DATA = [
       },
     ],
     code_link:
-      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
+      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/SensorPresencaRele",
   }, 
   {
     id: 5,
@@ -675,7 +675,7 @@ export const TUTORIAL_DATA = [
       },
     ],
     code_link:
-      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
+      "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorLuminosidadeRele",
   },  
   {
     id: 6,
@@ -722,7 +722,7 @@ export const TUTORIAL_DATA = [
       },
     ],
     code_link:
-      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
+      "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorPresencaLuminosidade",
   }, 
   {
     id: 7,
@@ -730,7 +730,8 @@ export const TUTORIAL_DATA = [
     photo: require("../../assets/tutoriais/descricao/sensor_umidade.jpg"),
     description:
       "O sensor de umidade é utilizado para medir as variações de umidade da terra. Neste projeto, foi utilizado " + 
-      "para acionar o sistema de rega de plantas que está acoplado ao sistema de energia solar.",
+      "para acionar o sistema de rega de plantas que está acoplado ao sistema de energia solar. \n \n" + 
+      "Para que o sistema funcione, o sensor de umidade deve ser inserido na terra ou na água.", 
     needs_list: [
       {
         name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
@@ -748,7 +749,7 @@ export const TUTORIAL_DATA = [
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
       {
-        name: "1 led verde e 1 led vermelho de 5mm",
+        name: "01 led verde e 01 led vermelho de 5mm",
         photo: require("../../assets/tutoriais/componentes/led5mm.png"),
         link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },      
@@ -759,15 +760,15 @@ export const TUTORIAL_DATA = [
       },
     ],
     code_link:
-      "https://github.com/guikominami/Arduino/tree/2ad64d5f580ad274ffda10e275891389effda6af/Roboino",
+      "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorUmidadeLed",
   },
   {
     id: 8,
     name: "Sistema de rega automático",
     photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
     description:
-      "O Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado." + 
-      "Uma bomba 12v puxa a água de um reservatório e leva até as floreiras por meio de uma mangueira." + 
+      "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado." + 
+      "Uma bomba puxa a água de um reservatório e leva até as floreiras, por meio de uma mangueira." + 
       "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
     needs_list: [
       {

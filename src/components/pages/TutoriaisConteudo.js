@@ -49,7 +49,8 @@ const SubText = styled.p`
   align-self: flex-start;
   width: 65%;
   font-weight: 400;
-
+  white-space: pre-line;
+  
   margin-left: 14rem;
 
   @media (max-width: 64em) {

@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import { styled } from "styled-components";
 import linkIcon from "../../assets/icons/link.png";
-//import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const Link = styled.a`
