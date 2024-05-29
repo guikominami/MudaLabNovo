@@ -792,19 +792,39 @@ export const TUTORIAL_DATA = [
       },
       {
         name: "Display LCD OLED 128x32",
-        photo: "",
-        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+        photo: require("../../assets/tutoriais/componentes/display.png"),
+        link: "",
       },  
       {
         name: "Bomba 12v",
-        photo: "",
-        link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+        photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
+        link: "",
       },        
       {
         name: "Jumpers de conexão",
         photo: require("../../assets/tutoriais/componentes/jumpers.png"),
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
+      {
+        name: "Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
+        photo: require("../../assets/tutoriais/componentes/placa_solar.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=1381_1382_3012&products_id=096-2261",
+      },
+      {
+        name: "Controlador de carga solar PWM 12V Lithium 10A",
+        photo: require("../../assets/tutoriais/componentes/controlador.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-9403",
+      },
+      {
+        name: "Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
+        photo: require("../../assets/tutoriais/componentes/bateria.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
+      },
+      {
+        name: "4m de cabo elétrico de 2.5mm",
+        photo: require("../../assets/tutoriais/componentes/fio-25.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
+      },      
     ],
     steps: [
       {
