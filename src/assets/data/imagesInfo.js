@@ -448,7 +448,7 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
       },
       {
-        name: "4m de cabo elétrico de 2.5mm",
+        name: "04 metros de cabo elétrico de 2.5mm",
         photo: require("../../assets/tutoriais/componentes/fio-25.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
       },
@@ -795,12 +795,7 @@ export const TUTORIAL_DATA = [
         name: "01 Display LCD OLED 128x32",
         photo: require("../../assets/tutoriais/componentes/display.png"),
         link: "",
-      },  
-      {
-        name: "01 Bomba 12v",
-        photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
-        link: "",
-      },        
+      },       
       {
         name: "Jumpers de conexão",
         photo: require("../../assets/tutoriais/componentes/jumpers.png"),
@@ -822,41 +817,31 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
       },
       {
-        name: "4m de cabo elétrico de 2.5mm",
+        name: "04 metros de cabo elétrico de 2.5mm",
         photo: require("../../assets/tutoriais/componentes/fio-25.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
       },   
       {
-        name: "02 Bornes triplo de conexão rápida",
-        photo: require("../../assets/tutoriais/componentes/fio-25.png"),
+        name: "02 Bornes triplos de conexão rápida",
+        photo: require("../../assets/tutoriais/componentes/borne.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
-      },           
+      },    
+      {
+        name: "01 Bomba de água 12v",
+        photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      },                
     ],
     steps: [
       {
         image: require("../../assets/tutoriais/passos/rega/rega_automatizada.jpg"),
       },      
       {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar1.jpg"),
-      },
+        image: require("../../assets/tutoriais/passos/rega/energia_solar_bornes.jpg"),
+      },  
       {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar2.jpg"),
-      },
-      {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar3.jpg"),
-      },
-      {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar4.jpg"),
-      },
-      {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar5.jpg"),
-      },
-      {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar6.jpg"),
-      },
-      {
-        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar_bornes.jpg"),
-      },      
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada_completo.jpg"),
+      },           
     ],    
     code_link:
       "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
