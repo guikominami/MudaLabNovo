@@ -829,9 +829,27 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/passos/horta_automatizada.jpg"),
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada.jpg"),
+      },      
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar1.jpg"),
       },
-    ],
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar2.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar3.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar4.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar5.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar6.jpg"),
+      },
+    ],    
     code_link:
       "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
   },  
