@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae88e9ce.css",
-    "main.js": "/static/js/main.c556fee9.js",
+    "main.js": "/static/js/main.39418118.js",
     "static/js/787.06b636c2.chunk.js": "/static/js/787.06b636c2.chunk.js",
     "static/media/lara.jpg": "/static/media/lara.a30cd5fd309ae485bc23.jpg",
     "static/media/carousel12.jpg": "/static/media/carousel12.ba9c0ffee663336037f5.jpg",
@@ -28,6 +28,7 @@
     "static/media/mini_placa_solar.png": "/static/media/mini_placa_solar.55b4bd2cd1e6333cf104.png",
     "static/media/lab4.jpg": "/static/media/lab4.2e5661cb17b4a79018c3.jpg",
     "static/media/robo7.jpg": "/static/media/robo7.01b2c232520956ab0979.jpg",
+    "static/media/rega_automatizada.jpg": "/static/media/rega_automatizada.98f3b2ad50c8f25fdda7.jpg",
     "static/media/robo5.jpg": "/static/media/robo5.4428277b896fe5d4f0f5.jpg",
     "static/media/cover_carousel_mobile2.jpg": "/static/media/cover_carousel_mobile2.46f942bebc3d7e6cafbc.jpg",
     "static/media/lab6.jpg": "/static/media/lab6.a8552de7084b64b415c7.jpg",
@@ -49,13 +50,13 @@
     "static/media/robo2.jpg": "/static/media/robo2.c0207a5ce04ed40e85df.jpg",
     "static/media/carousel1.jpg": "/static/media/carousel1.3e108446b3b66a8ce5c2.jpg",
     "static/media/lanterna_solar.jpg": "/static/media/lanterna_solar.8132378b1ea79eb3e8e0.jpg",
+    "static/media/sensor_umidade.jpg": "/static/media/sensor_umidade.ce1b53d7fb66c702b05c.jpg",
     "static/media/carousel7.jpg": "/static/media/carousel7.cc4ab0285d7c2b97a194.jpg",
     "static/media/bomba12v.png": "/static/media/bomba12v.e6198e2fe99d01116a1f.png",
     "static/media/lab9.jpg": "/static/media/lab9.b4d59e04e263d7ffe184.jpg",
     "static/media/carousel3.jpg": "/static/media/carousel3.c85905bd55f933f564a7.jpg",
     "static/media/energia_solar5.jpg": "/static/media/energia_solar5.71c4015c9eec98fe3710.jpg",
     "static/media/cover_carousel4.jpg": "/static/media/cover_carousel4.7da8eb99c2fcfd7851d2.jpg",
-    "static/media/sensor_umidade.jpg": "/static/media/sensor_umidade.e20c6eb8cf46e1186f3f.jpg",
     "static/media/carousel2.jpg": "/static/media/carousel2.60ce799306cf90301386.jpg",
     "static/media/eco3.jpg": "/static/media/eco3.aeee774571b18f766233.jpg",
     "static/media/sensor_presenca_luminosidade.jpg": "/static/media/sensor_presenca_luminosidade.b70fc5ed52b6c3050886.jpg",
@@ -64,7 +65,6 @@
     "static/media/eco2.jpg": "/static/media/eco2.92cb1ef1570c4417e32e.jpg",
     "static/media/sensor_luminosidade_rele.jpg": "/static/media/sensor_luminosidade_rele.d182c52d5e017f2c494b.jpg",
     "static/media/cover_carousel6.jpg": "/static/media/cover_carousel6.6141ff00b11ec2eeebb2.jpg",
-    "static/media/horta_automatizada.jpg": "/static/media/horta_automatizada.a29f3ef839e51355b1f2.jpg",
     "static/media/cover_carousel_mobile4.jpg": "/static/media/cover_carousel_mobile4.c6856605103442c5cc20.jpg",
     "static/media/cover_carousel2.jpg": "/static/media/cover_carousel2.8356c5c544a48892f2f7.jpg",
     "static/media/eco1.jpg": "/static/media/eco1.c48e63ff135ce4c66a9b.jpg",
@@ -88,6 +88,7 @@
     "static/media/controlador.png": "/static/media/controlador.2b1203473ec4f02a983b.png",
     "static/media/cover_carousel_mobile3.jpg": "/static/media/cover_carousel_mobile3.9b5ac72c6f871199f7e0.jpg",
     "static/media/lab0.jpg": "/static/media/lab0.4ca833a5eba9e33b8dda.jpg",
+    "static/media/horta_automatizada.jpg": "/static/media/horta_automatizada.a29f3ef839e51355b1f2.jpg",
     "static/media/bateria18650.png": "/static/media/bateria18650.f4c6726cca43ac7910af.png",
     "static/media/carousel5.jpg": "/static/media/carousel5.656eca1248e408a7a861.jpg",
     "static/media/skate4.jpg": "/static/media/skate4.2226d80356a5459f642a.jpg",
@@ -141,11 +142,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.ae88e9ce.css.map": "/static/css/main.ae88e9ce.css.map",
-    "main.c556fee9.js.map": "/static/js/main.c556fee9.js.map",
+    "main.39418118.js.map": "/static/js/main.39418118.js.map",
     "787.06b636c2.chunk.js.map": "/static/js/787.06b636c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae88e9ce.css",
-    "static/js/main.c556fee9.js"
+    "static/js/main.39418118.js"
   ]
 }

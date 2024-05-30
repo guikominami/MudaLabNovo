@@ -433,17 +433,17 @@ export const TUTORIAL_DATA = [
       "em um controlador de carga que recebe energia por meio da placa solar fotovoltaica e armazena a energia em uma bateria.",
     needs_list: [
       {
-        name: "Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
+        name: "01 Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
         photo: require("../../assets/tutoriais/componentes/placa_solar.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=1381_1382_3012&products_id=096-2261",
       },
       {
-        name: "Controlador de carga solar PWM 12V Lithium 10A",
+        name: "01 Controlador de carga solar PWM 12V Lithium 10A",
         photo: require("../../assets/tutoriais/componentes/controlador.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-9403",
       },
       {
-        name: "Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
+        name: "01 Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
         photo: require("../../assets/tutoriais/componentes/bateria.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
       },
@@ -482,42 +482,42 @@ export const TUTORIAL_DATA = [
       "A lanterna solar é um dispositivo que armazena energia da luz do sol através de uma mini placa solar acoplada a uma bateria.",
     needs_list: [
       {
-        name: "Suporte de pilha individual 18650",
+        name: "01 Suporte de pilha individual 18650",
         photo: require("../../assets/tutoriais/componentes/suporte_bateria1.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2560_2566&products_id=035-0686",
       },
       {
-        name: "Pilha 18650",
+        name: "01 Pilha 18650",
         photo: require("../../assets/tutoriais/componentes/bateria18650.png"),
         link: "https://mauser.pt/catalog/index.php?cPath=74_1011_215",
       },
       {
-        name: "Led 10mm",
+        name: "01 Led 10mm",
         photo: require("../../assets/tutoriais/componentes/led10mm.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=017-6021",
       },
       {
-        name: "Resistor 10kohm",
+        name: "01 Resistor 10kohm",
         photo: require("../../assets/tutoriais/componentes/resistor10k.png"),
         link: "",
       },
       {
-        name: "Botão pulsante (push button)",
+        name: "01 Botão pulsante (push button)",
         photo: require("../../assets/tutoriais/componentes/botao.png"),
         link: "https://www.usinainfo.com.br/interruptores-e-pulsadores/interruptor-pulsador-16mm-r13-507-6a-vermelho-6152.html",
       },
       {
-        name: "Diodo DO-41 5.1V 1.3W",
+        name: "01 Diodo DO-41 5.1V 1.3W",
         photo: require("../../assets/tutoriais/componentes/diodo.png"),
         link: "https://www.amazon.es/Diodo-Zener-DO-41-BZX85C5V1-unidades/dp/B093BXWZ54",
       },
       {
-        name: "Painel fotovoltaico policristalino 2.0V 0.2A 0.40W",
+        name: "01 Painel fotovoltaico policristalino 2.0V 0.2A 0.40W",
         photo: require("../../assets/tutoriais/componentes/mini_placa_solar.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-4908",
       },
       {
-        name: "Barra de conectores elétricos",
+        name: "01 Barra de conectores elétricos",
         photo: require("../../assets/tutoriais/componentes/barra-borne.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=570_2811_2220&products_id=096-7441",
       },
@@ -527,7 +527,7 @@ export const TUTORIAL_DATA = [
         link: "https://produto.mercadolivre.com.br/MLB-1763673675-100m-cabinho-flexivel-22awg-030mm-preto-_JM#polycard_client=recommendations_vip-pads-up&reco_backend=vip_pads_up_ranker_retrieval_marketplace&reco_client=vip-pads-up&reco_item_pos=0&reco_backend_type=low_level&reco_id=0a8e69b8-27ac-4131-82fe-0dddabbf065a&is_advertising=true&ad_domain=VIPDESKTOP_UP&ad_position=1&ad_click_id=M2E0YTc4MjUtNjlkYS00NjI3LWEzZWEtMjliNjU4ZjU2OTA1",
       },
       {
-        name: "Lata ou objeto para armazenar o esquema eletrônico que permita manter o botão na parte externa para acionar a lanterna.",
+        name: "01 Lata ou objeto para armazenar o esquema eletrônico que permita manter o botão na parte externa para acionar a lanterna.",
         photo: require("../../assets/tutoriais/componentes/lata.png"),
       },
 
@@ -549,12 +549,12 @@ export const TUTORIAL_DATA = [
       "Neste projeto, a interface de desenvolvimento Arduino foi utilizada para a construção de robôs controlados por telemóvel/tablet.",
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Driver de motor L298N",
+        name: "01 Driver de motor L298N",
         photo: require("../../assets/tutoriais/componentes/drivermotor.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-6807",
       },
@@ -564,12 +564,12 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7645",
       },
       {
-        name: "Módulo de transmissão Bluetooth HC-05 ou HC-06",
+        name: "01 Módulo de transmissão Bluetooth HC-05 ou HC-06",
         photo: require("../../assets/tutoriais/componentes/bluetooth.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-4644",
       },
       {
-        name: "Suporte de pilhas duplas 18650",
+        name: "01 Suporte de pilhas duplas 18650",
         photo: require("../../assets/tutoriais/componentes/suporte-bateria2.jpg"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2560_2566&products_id=035-0687",
       },
@@ -606,12 +606,12 @@ export const TUTORIAL_DATA = [
       "para otimizar o sistema de energia solar e permitir que o sistema de luz fosse acionado somente quando houvesse movimento por perto.",
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Sensor de presença infra vermelho",
+        name: "01 Sensor de presença infra vermelho",
         photo: require("../../assets/tutoriais/componentes/infravermelho.png"),
         link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
@@ -621,7 +621,7 @@ export const TUTORIAL_DATA = [
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
       {
-        name: "Led 5mm",
+        name: "01 Led 5mm",
         photo: require("../../assets/tutoriais/componentes/led5mm.png"),
         link: "https://es.aliexpress.com/item/32731407139.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es32731407139&netw=x&device=c&albpg=&albpd=es32731407139&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJrIGI4YFs9Omn_5340GQc6Ed9rzmtFl0bG_fu9c66NzOta9kdmVgcaArSuEALw_wcB&gclsrc=aw.ds&aff_fcid=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0470afe41aac454b9b68b48ae7b29615-1714596114250-01168-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
@@ -644,17 +644,17 @@ export const TUTORIAL_DATA = [
       "ou seja, quando estiver escuro, acender uma lâmpada por meio de um relê, que funciona como um interruptor.",
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Sensor de luminosidade fotossensível LDR",
+        name: "01 Sensor de luminosidade fotossensível LDR",
         photo: require("../../assets/tutoriais/componentes/ldr.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=1667_2669_2678&products_id=096-4674",
       },
       {
-        name: "Módulo relé 5V",
+        name: "01 Módulo relé 5V",
         photo: require("../../assets/tutoriais/componentes/rele.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
       },
@@ -664,7 +664,7 @@ export const TUTORIAL_DATA = [
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
       {
-        name: "Lâmpada e bocal",
+        name: "01 Lâmpada e 01 bocal",
         photo: require("../../assets/tutoriais/componentes/bocal.png"),
         link: "https://es.aliexpress.com/item/1005006223172951.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=20280463591&albag=&trgt=&crea=es1005006223172951&netw=x&device=c&albpg=&albpd=es1005006223172951&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHL1GHmBhAhX5h6KoFUx5js0FQI-uYz83N3411LBppGUQBTBwIMxn-EaAp1PEALw_wcB&gclsrc=aw.ds&aff_fcid=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
@@ -686,22 +686,22 @@ export const TUTORIAL_DATA = [
       "A lâmpada só acenderá quando for noite e detectar movimento.",
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Sensor de luminosidade fotossensível LDR",
+        name: "01 Sensor de luminosidade fotossensível LDR",
         photo: require("../../assets/tutoriais/componentes/ldr.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=1667_2669_2678&products_id=096-4674",
       },
       {
-        name: "Sensor de presença infra vermelho",
+        name: "01 Sensor de presença infra vermelho",
         photo: require("../../assets/tutoriais/componentes/infravermelho.png"),
         link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
       {
-        name: "Módulo relé 5V",
+        name: "01 Módulo relé 5V",
         photo: require("../../assets/tutoriais/componentes/rele.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
       },
@@ -711,7 +711,7 @@ export const TUTORIAL_DATA = [
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
       {
-        name: "Lâmpada e bocal",
+        name: "01 Lâmpada e 01 bocal",
         photo: require("../../assets/tutoriais/componentes/bocal.png"),
         link: "https://es.aliexpress.com/item/1005006223172951.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=20280463591&albag=&trgt=&crea=es1005006223172951&netw=x&device=c&albpg=&albpd=es1005006223172951&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHL1GHmBhAhX5h6KoFUx5js0FQI-uYz83N3411LBppGUQBTBwIMxn-EaAp1PEALw_wcB&gclsrc=aw.ds&aff_fcid=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
       },
@@ -734,12 +734,12 @@ export const TUTORIAL_DATA = [
       "Para que o sistema funcione, o sensor de umidade deve ser inserido na terra ou na água.", 
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Sensor de umidade de solo",
+        name: "01 Sensor de umidade de solo",
         photo: require("../../assets/tutoriais/componentes/umidade.png"),
         link: "https://www.reichelt.com/es/es/arduino-sensor-de-humedad-del-suelo-ard-sen-wet2-p282512.html?PROVID=2855&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIQFvG3fp6A1F-jKzqrnr2AnjY7o0uEYMrx5DbaC-hWp79CIqZCz0waAvmQEALw_wcB",
       },
@@ -772,32 +772,32 @@ export const TUTORIAL_DATA = [
       "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
     needs_list: [
       {
-        name: "Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
         photo: require("../../assets/tutoriais/componentes/arduino.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "Sensor de nível",
+        name: "01 Sensor de nível",
         photo: require("../../assets/tutoriais/componentes/nivel.png"),
         link: "",
       },
       {
-        name: "Módulo relé 5V",
+        name: "01 Módulo relé 5V",
         photo: require("../../assets/tutoriais/componentes/rele.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
       },
       {
-        name: "Potenciômetro linear 10K",
+        name: "01 Potenciômetro linear 10K",
         photo: require("../../assets/tutoriais/componentes/potenciometro.png"),
         link: "",
       },
       {
-        name: "Display LCD OLED 128x32",
+        name: "01 Display LCD OLED 128x32",
         photo: require("../../assets/tutoriais/componentes/display.png"),
         link: "",
       },  
       {
-        name: "Bomba 12v",
+        name: "01 Bomba 12v",
         photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
         link: "",
       },        
@@ -807,17 +807,17 @@ export const TUTORIAL_DATA = [
         link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
       },
       {
-        name: "Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
+        name: "01 Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
         photo: require("../../assets/tutoriais/componentes/placa_solar.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=1381_1382_3012&products_id=096-2261",
       },
       {
-        name: "Controlador de carga solar PWM 12V Lithium 10A",
+        name: "01 Controlador de carga solar PWM 12V Lithium 10A",
         photo: require("../../assets/tutoriais/componentes/controlador.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-9403",
       },
       {
-        name: "Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
+        name: "01 Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
         photo: require("../../assets/tutoriais/componentes/bateria.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
       },
@@ -825,7 +825,12 @@ export const TUTORIAL_DATA = [
         name: "4m de cabo elétrico de 2.5mm",
         photo: require("../../assets/tutoriais/componentes/fio-25.png"),
         link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
-      },      
+      },   
+      {
+        name: "02 Bornes triplo de conexão rápida",
+        photo: require("../../assets/tutoriais/componentes/fio-25.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
+      },           
     ],
     steps: [
       {
@@ -849,6 +854,9 @@ export const TUTORIAL_DATA = [
       {
         image: require("../../assets/tutoriais/passos/energia_solar/energia_solar6.jpg"),
       },
+      {
+        image: require("../../assets/tutoriais/passos/energia_solar/energia_solar_bornes.jpg"),
+      },      
     ],    
     code_link:
       "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
