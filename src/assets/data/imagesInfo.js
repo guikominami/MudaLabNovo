@@ -830,7 +830,12 @@ export const TUTORIAL_DATA = [
         name: "01 Bomba de água 12v",
         photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
-      },                
+      },   
+      {
+        name: "02 mangueiras - Na imagem, um kit completo com 2 mangueiras e uma bomba 12v.",
+        photo: require("../../assets/tutoriais/componentes/mangueira.jpg"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      },                   
     ],
     steps: [
       {
@@ -841,7 +846,10 @@ export const TUTORIAL_DATA = [
       },  
       {
         image: require("../../assets/tutoriais/passos/rega/rega_automatizada_completo.jpg"),
-      },           
+      },    
+      {
+        image: require("../../assets/tutoriais/passos/rega/rega_solucao.jpg"),
+      },              
     ],    
     code_link:
       "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
