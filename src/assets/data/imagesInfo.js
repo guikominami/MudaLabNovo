@@ -767,8 +767,8 @@ export const TUTORIAL_DATA = [
     name: "Sistema de rega automático",
     photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
     description:
-      "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado." + 
-      "Uma bomba puxa a água de um reservatório e leva até as floreiras, por meio de uma mangueira." + 
+      "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado. \n \n" + 
+      "Uma bomba puxa a água de um reservatório e leva até as floreiras, por meio de uma mangueira. \n \n" + 
       "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
     needs_list: [
       {

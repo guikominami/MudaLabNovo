@@ -42,7 +42,11 @@ export const dataItemsMenu = [
       {
         title: 'PARCEIROS',
         url: '/parceiros'
-      },                
+      }, 
+      {
+        title: 'TUTORIAIS',
+        url: '/tutoriais'
+      },                      
     ]    
   },  
 ];

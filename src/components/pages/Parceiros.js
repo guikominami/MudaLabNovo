@@ -20,8 +20,13 @@ const Section = styled.section`
   align-items: center;
   flex-direction: column;
 
+  @media (max-width: 64em) {
+    width: 100vw;
+    min-height: auto;  
+  }  
+
   @media (max-width: 48em) {
-    width: 89vw;
+    width: 93vw;
     min-height: auto;  
   }
 `;
@@ -39,6 +44,11 @@ const Container = styled.div`
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
+
+  @media (max-width: 64em) {
+    margin: 5.5rem 0rem 1rem 0rem;
+    width: 78%;    
+  }  
 
   @media (max-width: 48em) {
     margin: 5.5rem 0rem 1rem 1.5rem;
@@ -73,6 +83,12 @@ const ImageContainer = styled.div`
   img{
     width: 82%;
   }
+
+  @media (max-width: 64em) {
+    img{
+      width: 90%;
+    }
+  }    
 
   @media (max-width: 48em) {
     display: none;    
