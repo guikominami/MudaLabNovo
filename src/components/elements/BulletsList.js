@@ -3,6 +3,22 @@ import { styled } from "styled-components";
 import linkIcon from "../../assets/icons/link.png";
 import Modal from '@mui/material/Modal';
 
+const List = styled.ul`
+
+  width: 100%;
+
+  @media (max-width: 48em) {
+    width: 60%;
+
+    align-items: start;
+    text-align: left;
+    width: 100%;
+    padding: 0rem;
+    margin: 0.5rem 0rem 1rem 1rem;
+  }
+
+`;
+
 const Link = styled.a`
   color: blue;
   text-decoration: none;
@@ -15,6 +31,18 @@ const Link = styled.a`
     width: 2%;
     vertical-align: middle;
   }
+
+  @media (max-width: 64em) {
+    img {
+      width: 2.5%;
+    }
+  }   
+
+  @media (max-width: 48em) {
+    img {
+      width: 7%;
+    }
+  }  
 `;
 
 const Box = styled.div`
@@ -34,6 +62,13 @@ const Box = styled.div`
     align-items: center;
   }
 
+  @media (max-width: 48em) {
+
+    top: 30%;
+    left: 12%;
+
+  }    
+
 `;
 
 const BulletsList = ({ data }) => {
@@ -47,7 +82,7 @@ const BulletsList = ({ data }) => {
 
   return (
     <>
-      <ul>
+      <List>
         {data.map((item) => (
           <li key={item.key}>
             {item.name} - <Link onClick={handleOpen(item.photo)}><img src={linkIcon} alt="link" /></Link>
@@ -56,7 +91,7 @@ const BulletsList = ({ data }) => {
             </Link> */}
           </li>
         ))}
-      </ul>       
+      </List>       
       <Modal
         open={open}
         onClose={handleClose}

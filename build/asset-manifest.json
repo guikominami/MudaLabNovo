@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae88e9ce.css",
-    "main.js": "/static/js/main.500b900c.js",
+    "main.js": "/static/js/main.9a0be84c.js",
     "static/js/787.06b636c2.chunk.js": "/static/js/787.06b636c2.chunk.js",
     "static/media/lara.jpg": "/static/media/lara.a30cd5fd309ae485bc23.jpg",
     "static/media/carousel12.jpg": "/static/media/carousel12.ba9c0ffee663336037f5.jpg",
@@ -10,6 +10,7 @@
     "static/media/gui.jpg": "/static/media/gui.a033d7ca7f382d238a94.jpg",
     "static/media/carousel13.jpg": "/static/media/carousel13.8327e185f2d6de01ecb7.jpg",
     "static/media/bateria.png": "/static/media/bateria.9fc9f40ed53269d0df43.png",
+    "static/media/rega_solucao.jpg": "/static/media/rega_solucao.f743f6b7bf9a3ea02e69.jpg",
     "static/media/robo4.jpg": "/static/media/robo4.28f05c5a717f3555557d.jpg",
     "static/media/robo6.jpg": "/static/media/robo6.50bc57af453dc8aca9ba.jpg",
     "static/media/sobre1.jpg": "/static/media/sobre1.29b79a2b5669c0bdcf53.jpg",
@@ -23,8 +24,8 @@
     "static/media/display.png": "/static/media/display.067d563db8b9bd66fdf5.png",
     "static/media/lab8.jpg": "/static/media/lab8.fe2e13f7a4b0acc4abd3.jpg",
     "static/media/sobre2.jpg": "/static/media/sobre2.b6105ee553e8ac8a9625.jpg",
+    "static/media/rega_automatizada.jpg": "/static/media/rega_automatizada.7175eb2a38ba4c86bde4.jpg",
     "static/media/ldr.png": "/static/media/ldr.3620fb0776fdf9ad21e3.png",
-    "static/media/rega_automatizada.jpg": "/static/media/rega_automatizada.390c34ee2bbc1eeef994.jpg",
     "static/media/mpa5.jpg": "/static/media/mpa5.b39429f7341044c00558.jpg",
     "static/media/lab5.jpg": "/static/media/lab5.ed4fa1bb91fb02eb7848.jpg",
     "static/media/mini_placa_solar.png": "/static/media/mini_placa_solar.55b4bd2cd1e6333cf104.png",
@@ -81,6 +82,7 @@
     "static/media/lab3.jpg": "/static/media/lab3.54261be644279fb1db4f.jpg",
     "static/media/nivel.png": "/static/media/nivel.e5acf87b6f68b962dbf2.png",
     "static/media/bocal.png": "/static/media/bocal.e68d9ea7c8e9d590f889.png",
+    "static/media/mangueira.jpg": "/static/media/mangueira.a0041c0040851e5b8982.jpg",
     "static/media/bluetooth.png": "/static/media/bluetooth.3076379887f96d063c45.png",
     "static/media/parceirosMobile.jpg": "/static/media/parceirosMobile.f8105886ceedb6c94345.jpg",
     "static/media/arduino.png": "/static/media/arduino.48d3ec177271e84c2d2c.png",
@@ -145,11 +147,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.ae88e9ce.css.map": "/static/css/main.ae88e9ce.css.map",
-    "main.500b900c.js.map": "/static/js/main.500b900c.js.map",
+    "main.9a0be84c.js.map": "/static/js/main.9a0be84c.js.map",
     "787.06b636c2.chunk.js.map": "/static/js/787.06b636c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae88e9ce.css",
-    "static/js/main.500b900c.js"
+    "static/js/main.9a0be84c.js"
   ]
 }

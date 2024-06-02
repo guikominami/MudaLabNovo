@@ -8,8 +8,6 @@ const SectionComponent = styled.section`
   width: 98vw;
   background-color: ${(props) => props.theme.body};
 
-  //background-color: yellow;
-
   position: relative;
   color: ${(props) => props.theme.text};
 

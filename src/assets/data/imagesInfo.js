@@ -830,7 +830,12 @@ export const TUTORIAL_DATA = [
         name: "01 Bomba de água 12v",
         photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
         link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
-      },   
+      }, 
+      {
+        name: "01 Bomba de água submergível (para soluções mais simples, pode usar essa)",
+        photo: require("../../assets/tutoriais/componentes/mangueira.jpg"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      },          
       {
         name: "02 mangueiras - Na imagem, um kit completo com 2 mangueiras e uma bomba 12v.",
         photo: require("../../assets/tutoriais/componentes/mangueira.jpg"),

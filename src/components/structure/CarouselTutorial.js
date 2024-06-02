@@ -16,8 +16,21 @@ const Container = styled.div`
   width: 60vw;
   min-height: 70vh;
 
+  align-self: center;
+  text-align: center;
+
+  img {
+    align-self: center;
+  }  
+
+  @media (max-width: 64em) {
+    min-height: 25vh;
+    width: 86vw;
+    margin-left: 0.5rem;
+  }  
+
   @media (max-width: 48em) {
-    height: 45vh;
+    min-height: 20vh;
     width: 80vw;
   }
 
@@ -42,7 +55,22 @@ const Container = styled.div`
       width: 100%;
       height: auto;
       object-fit: cover;
+
+      margin-bottom: 1rem;
     }  
+
+    @media (max-width: 64em) {
+      img {
+        margin-bottom: 1rem;
+      } 
+    }  
+    
+    @media (max-width: 48em) {
+      img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      } 
+    }      
   }
 
   .swiper-button-prev {
@@ -112,9 +140,7 @@ const CarouselTutorial = ({
       >
         {imagesCarousel.map((item) => (
           <SwiperSlide key={item.id}>
-            <div>
-              <img src={item.image} alt={item.text} />
-            </div>
+            <img src={item.image} alt={item.text} />
           </SwiperSlide>
         ))}
       </Swiper>
