@@ -857,10 +857,13 @@ export const TUTORIAL_DATA = [
       },                           
       {
         image: require("../../assets/tutoriais/passos/rega/rega_automatizada.jpg"),
-      },      
+      }, 
       {
         image: require("../../assets/tutoriais/passos/rega/energia_solar_bornes.jpg"),
-      },  
+      },       
+      {
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada_completa.jpg"),
+      },                 
       {
         image: require("../../assets/tutoriais/passos/rega/rega_solucao.jpg"),
       },              
