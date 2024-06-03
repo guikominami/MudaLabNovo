@@ -844,14 +844,23 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada1.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada2.jpg"),
+      },        
+      {
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada3.jpg"),
+      },        
+      {
+        image: require("../../assets/tutoriais/passos/rega/rega_automatizada4.jpg"),
+      },                           
+      {
         image: require("../../assets/tutoriais/passos/rega/rega_automatizada.jpg"),
       },      
       {
         image: require("../../assets/tutoriais/passos/rega/energia_solar_bornes.jpg"),
       },  
-      {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada_completo.jpg"),
-      },    
       {
         image: require("../../assets/tutoriais/passos/rega/rega_solucao.jpg"),
       },              
