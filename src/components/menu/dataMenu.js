@@ -21,7 +21,11 @@ export const dataItemsMenu = [
       {
         title: 'SUSTENTABILIDADE',
         url: '/sustentabilidade'
-      },         
+      },   
+      {
+        title: 'TUTORIAIS DE TECNOLOGIA',
+        url: '/tutoriais'
+      },             
     ]
   },
   {
@@ -42,10 +46,6 @@ export const dataItemsMenu = [
       {
         title: 'PARCEIROS',
         url: '/parceiros'
-      }, 
-      {
-        title: 'TUTORIAIS',
-        url: '/tutoriais'
       },                      
     ]    
   },  

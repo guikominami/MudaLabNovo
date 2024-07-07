@@ -28,7 +28,7 @@ const Box = styled.div`
 
     margin-bottom: 1rem;
     margin-left: 0rem;
-    
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@ const Title = styled.h1`
     margin: 2rem 0rem 2rem 4rem;
 
     font-size: ${(props) => props.theme.fontxl};
-  }  
+  }
 
   @media (max-width: 48em) {
     margin: 1rem 0rem 1rem 2rem;
@@ -87,7 +87,7 @@ const Line = styled.div`
   @media (max-width: 40em) {
     width: 84%;
     margin: 0rem 0rem 1rem 0rem;
-  }  
+  }
 `;
 
 const List = styled.li`
@@ -106,7 +106,7 @@ const Tutoriais = () => {
   return (
     <SectionComponent>
       <Box>
-      <EspacoInicial></EspacoInicial>
+        <EspacoInicial></EspacoInicial>
         <Title>Tutoriais</Title>
         <SubTextTutorialsComponent>
           Esta seção tem o objetivo de oferecer referências para a produção de
@@ -118,10 +118,10 @@ const Tutoriais = () => {
           teve como objetivos a transformação de um espaço junto à escola,
           desenhado e construído com a participação da comunidade escolar e a
           capacitação de estudantes e educadores para o uso de sistemas ativados
-          a energia solar e robótica. O projeto foi desenvolvido na Escola
-          Básica 2,3 Manuel da Maia, em Lisboa/Portugal, promovido pela Câmara
-          de Lisboa e realizado em parceria com a Rés do Chão, uma associação
-          especializada em arquitetura, urbanismo e participação.
+          a energia solar e robótica. O projeto é promovido pela associação Rés
+          do Chão e está financiado pelo programa BipZip da Câmara Municipal de
+          Lisboa e conta como parceiros a associação MudaLab, o agrupamento de
+          escolas Manuel da Maia e a Junta de Freguesia de Campo de Ourique.
           <br></br>
           <br></br>A fabricação destes protótipos pode levar em consideração
           conhecimentos de eletrônica básica, elétrica e programação.
@@ -142,7 +142,7 @@ const Tutoriais = () => {
           <TutoriaisConteudo data={TUTORIAL_DATA[idItem]} />
         ) : (
           <></>
-        )}        
+        )}
       </Box>
     </SectionComponent>
   );
