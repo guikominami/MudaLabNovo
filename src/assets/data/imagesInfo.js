@@ -636,6 +636,48 @@ export const TUTORIAL_DATA = [
   }, 
   {
     id: 5,
+    name: "Sensor de ultrassom e relê",
+    photo: require("../../assets/tutoriais/descricao/sensor_ultrassom.jpg"),
+    description:
+      "O sensor de ultrassom é um dispositivo que é acionado quando detecta movimento. Ele foi utilizado neste projeto " + 
+      "para otimizar o sistema de energia solar e permitir que o sistema de luz fosse acionado somente quando houvesse movimento por perto.",
+    needs_list: [
+      {
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        photo: require("../../assets/tutoriais/componentes/arduino.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "01 Sensor de ultrassom",
+        photo: require("../../assets/tutoriais/componentes/ultrassom.png"),
+        link: "https://es.aliexpress.com/item/1005007273747405.html?src=google&pdp_npi=4%40dis%21EUR%211.44%211.44%21%21%21%21%21%40%2112000040025894671%21ppc%21%21%21&src=google&albch=shopping&acnt=439-079-4345&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=es1005007273747405&ds_e_product_merchant_id=5384603311&ds_e_product_country=ES&ds_e_product_language=es&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=21486736708&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gclid=CjwKCAjwyfe4BhAWEiwAkIL8sJONT9Ya9HGREXBQ-ywKuJC9a6Ixh_kJ3iLnAaMfMsckwAgNAdL24RoCq6EQAvD_BwE",
+      },
+      {
+        name: "Jumpers de conexão",
+        photo: require("../../assets/tutoriais/componentes/jumpers.png"),
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },
+      {
+        name: "01 Módulo relé 5V",
+        photo: require("../../assets/tutoriais/componentes/rele.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
+      },
+      {
+        name: "01 Lâmpada e 01 bocal",
+        photo: require("../../assets/tutoriais/componentes/bocal.png"),
+        link: "https://es.aliexpress.com/item/1005006223172951.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=20280463591&albag=&trgt=&crea=es1005006223172951&netw=x&device=c&albpg=&albpd=es1005006223172951&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHL1GHmBhAhX5h6KoFUx5js0FQI-uYz83N3411LBppGUQBTBwIMxn-EaAp1PEALw_wcB&gclsrc=aw.ds&aff_fcid=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=761b993c02154ab2a07c99908db5fbd7-1714595876292-05166-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },      
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/sensor_ultrassom_rele.jpg"),
+      },
+    ],
+    code_link:
+      "https://github.com/guikominami/Arduino/tree/76e4f02417d66753a9f8ed1c2863dd82b40634f6/SensorUltrassomRele",
+  },   
+  {
+    id: 6,
     name: "Sensor de luminosidade e relé",
     photo: require("../../assets/tutoriais/descricao/sensor_luminosidade_rele.jpg"),
     description:
@@ -678,7 +720,7 @@ export const TUTORIAL_DATA = [
       "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorLuminosidadeRele",
   },  
   {
-    id: 6,
+    id: 7,
     name: "Sensor de presença e luminosidade",
     photo: require("../../assets/tutoriais/descricao/sensor_presenca_luminosidade.jpg"),
     description:
@@ -725,7 +767,7 @@ export const TUTORIAL_DATA = [
       "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorPresencaLuminosidade",
   }, 
   {
-    id: 7,
+    id: 8,
     name: "Sensor de umidade",
     photo: require("../../assets/tutoriais/descricao/sensor_umidade.jpg"),
     description:
@@ -763,7 +805,7 @@ export const TUTORIAL_DATA = [
       "https://github.com/guikominami/Arduino/tree/30123e8e88d9c2a901e165b3ca0d62e1b1cd2c08/SensorUmidadeLed",
   },
   {
-    id: 8,
+    id: 9,
     name: "Sistema de rega automático",
     photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
     description:

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae88e9ce.css",
-    "main.js": "/static/js/main.9178aaa4.js",
+    "main.js": "/static/js/main.34f06ffe.js",
     "static/js/787.06b636c2.chunk.js": "/static/js/787.06b636c2.chunk.js",
     "static/media/lara.jpg": "/static/media/lara.a30cd5fd309ae485bc23.jpg",
     "static/media/carousel12.jpg": "/static/media/carousel12.ba9c0ffee663336037f5.jpg",
@@ -45,6 +45,7 @@
     "static/media/sobre3.jpg": "/static/media/sobre3.992c21add187570e157e.jpg",
     "static/media/led5mm.png": "/static/media/led5mm.f32738636396632fbbc9.png",
     "static/media/parceirosDesktop.jpg": "/static/media/parceirosDesktop.a8aeae507cb6dbd4fc35.jpg",
+    "static/media/sensor_presenca_luminosidade.jpg": "/static/media/sensor_presenca_luminosidade.b70fc5ed52b6c3050886.jpg",
     "static/media/energia_solar1.jpg": "/static/media/energia_solar1.d739aa890ef898fe5e64.jpg",
     "static/media/skate3.jpg": "/static/media/skate3.310b4f8d8616f016bc8b.jpg",
     "static/media/robo3.jpg": "/static/media/robo3.21130e2143247d427bdf.jpg",
@@ -57,19 +58,20 @@
     "static/media/carousel7.jpg": "/static/media/carousel7.cc4ab0285d7c2b97a194.jpg",
     "static/media/bomba12v.png": "/static/media/bomba12v.e6198e2fe99d01116a1f.png",
     "static/media/lab9.jpg": "/static/media/lab9.b4d59e04e263d7ffe184.jpg",
+    "static/media/sensor_luminosidade_rele.jpg": "/static/media/sensor_luminosidade_rele.0a7d6c0378cf0d96bf7a.jpg",
+    "static/media/sensor_ultrassom_rele.jpg": "/static/media/sensor_ultrassom_rele.291c7eff3651b0379355.jpg",
     "static/media/carousel3.jpg": "/static/media/carousel3.c85905bd55f933f564a7.jpg",
     "static/media/rega_automatizada4.jpg": "/static/media/rega_automatizada4.70ce08f68153d34f1b8d.jpg",
     "static/media/energia_solar5.jpg": "/static/media/energia_solar5.71c4015c9eec98fe3710.jpg",
     "static/media/cover_carousel4.jpg": "/static/media/cover_carousel4.7da8eb99c2fcfd7851d2.jpg",
     "static/media/carousel2.jpg": "/static/media/carousel2.60ce799306cf90301386.jpg",
     "static/media/eco3.jpg": "/static/media/eco3.aeee774571b18f766233.jpg",
-    "static/media/sensor_presenca_luminosidade.jpg": "/static/media/sensor_presenca_luminosidade.b70fc5ed52b6c3050886.jpg",
     "static/media/rega_automatizada3.jpg": "/static/media/rega_automatizada3.6b50ca85cb4d9e331894.jpg",
     "static/media/skate2.jpg": "/static/media/skate2.886499e3dbd53dad1b2e.jpg",
     "static/media/umidade.png": "/static/media/umidade.85ab386bc988c00ded93.png",
     "static/media/eco2.jpg": "/static/media/eco2.92cb1ef1570c4417e32e.jpg",
-    "static/media/sensor_luminosidade_rele.jpg": "/static/media/sensor_luminosidade_rele.d182c52d5e017f2c494b.jpg",
     "static/media/rega_automatizada2.jpg": "/static/media/rega_automatizada2.6007c18c8dab781666e2.jpg",
+    "static/media/sensor_ultrassom.jpg": "/static/media/sensor_ultrassom.b70fc5ed52b6c3050886.jpg",
     "static/media/cover_carousel6.jpg": "/static/media/cover_carousel6.6141ff00b11ec2eeebb2.jpg",
     "static/media/cover_carousel_mobile4.jpg": "/static/media/cover_carousel_mobile4.c6856605103442c5cc20.jpg",
     "static/media/cover_carousel2.jpg": "/static/media/cover_carousel2.8356c5c544a48892f2f7.jpg",
@@ -112,6 +114,7 @@
     "static/media/lata.png": "/static/media/lata.d706891229b7ca1c87cb.png",
     "static/media/mpa1.jpg": "/static/media/mpa1.da9acaf1c98a3df61db3.jpg",
     "static/media/mpa7.jpg": "/static/media/mpa7.c6628d0528d9295bcc26.jpg",
+    "static/media/ultrassom.png": "/static/media/ultrassom.ad03919d42c62795acbe.png",
     "static/media/lab2.jpg": "/static/media/lab2.79c34471ef4c825ca0fa.jpg",
     "static/media/eco4.jpg": "/static/media/eco4.2702f290a42aba8f8a25.jpg",
     "static/media/suporte_bateria1.png": "/static/media/suporte_bateria1.20b3eb54e53a48e1c0aa.png",
@@ -151,11 +154,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.ae88e9ce.css.map": "/static/css/main.ae88e9ce.css.map",
-    "main.9178aaa4.js.map": "/static/js/main.9178aaa4.js.map",
+    "main.34f06ffe.js.map": "/static/js/main.34f06ffe.js.map",
     "787.06b636c2.chunk.js.map": "/static/js/787.06b636c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae88e9ce.css",
-    "static/js/main.9178aaa4.js"
+    "static/js/main.34f06ffe.js"
   ]
 }
