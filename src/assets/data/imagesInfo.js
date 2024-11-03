@@ -806,7 +806,7 @@ export const TUTORIAL_DATA = [
   },
   {
     id: 9,
-    name: "Sistema de rega automático",
+    name: "Sistema de rega automático com reservatório de água",
     photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
     description:
       "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado. \n \n" + 
@@ -886,31 +886,153 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada1.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada1.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada2.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada2.jpg"),
       },        
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada3.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada3.jpg"),
       },        
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada4.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada4.jpg"),
       },                           
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada.jpg"),
       }, 
       {
-        image: require("../../assets/tutoriais/passos/rega/energia_solar_bornes.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/energia_solar_bornes.jpg"),
       },       
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_automatizada_completa.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_automatizada_completa.jpg"),
       },                 
       {
-        image: require("../../assets/tutoriais/passos/rega/rega_solucao.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_reservatorio_agua/rega_solucao.jpg"),
       },              
     ],    
     code_link:
       "https://github.com/guikominami/Arduino/blob/497d958bf44e0e12dd38f6da35779ee2ac7cfefc/irrigacaoAutomaticaSensorNivel.ino",
   },  
+  {
+    id: 10,
+    name: "Sensor de umidade e rele",
+    photo: require("../../assets/tutoriais/descricao/sensor_umidade_rele.jpg"),
+    description:
+      "O sensor de umidade é utilizado para medir as variações de umidade da terra. Neste projeto, foi utilizado " + 
+      "para acionar o sistema de rega de plantas que está acoplado ao sistema de energia solar. \n \n" + 
+      "Para que o sistema funcione, o sensor de umidade deve ser inserido na terra ou na água.", 
+    needs_list: [
+      {
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        photo: require("../../assets/tutoriais/componentes/arduino.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "01 Sensor de umidade de solo",
+        photo: require("../../assets/tutoriais/componentes/umidade.png"),
+        link: "https://www.reichelt.com/es/es/arduino-sensor-de-humedad-del-suelo-ard-sen-wet2-p282512.html?PROVID=2855&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIQFvG3fp6A1F-jKzqrnr2AnjY7o0uEYMrx5DbaC-hWp79CIqZCz0waAvmQEALw_wcB",
+      },
+      {
+        name: "Jumpers de conexão",
+        photo: require("../../assets/tutoriais/componentes/jumpers.png"),
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },
+      {
+        name: "01 Módulo relé 5V",
+        photo: require("../../assets/tutoriais/componentes/rele.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
+      },       
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/sensor_umidade_rele.jpg"),
+      },
+    ],    
+    code_link:
+      "https://github.com/guikominami/Arduino/tree/f31d15dea090c9dc26fd8757d932b71c6ccae58c/SensorUmidadeRele",
+  },  
+  {
+    id: 11,
+    name: "Sistema de rega automático com fonte de água",
+    photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
+    description:
+      "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado. \n \n" + 
+      "Uma bomba puxa a água de um reservatório e leva até as floreiras, por meio de uma mangueira. \n \n" + 
+      "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
+    needs_list: [
+      {
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        photo: require("../../assets/tutoriais/componentes/arduino.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "01 Sensor de nível",
+        photo: require("../../assets/tutoriais/componentes/nivel.png"),
+        link: "",
+      },
+      {
+        name: "01 Módulo relé 5V",
+        photo: require("../../assets/tutoriais/componentes/rele.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7804",
+      },      
+      {
+        name: "Jumpers de conexão",
+        photo: require("../../assets/tutoriais/componentes/jumpers.png"),
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },
+      {
+        name: "01 Painel solar fotovoltaico policristalino 12V 10W - 290x330mm",
+        photo: require("../../assets/tutoriais/componentes/placa_solar.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=1381_1382_3012&products_id=096-2261",
+      },
+      {
+        name: "01 Controlador de carga solar PWM 12V Lithium 10A",
+        photo: require("../../assets/tutoriais/componentes/controlador.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-9403",
+      },
+      {
+        name: "01 Bateria de Lithium (LiFePO4) 12.8V 96Wh 7.5Ah",
+        photo: require("../../assets/tutoriais/componentes/bateria.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=74_2887&products_id=115-2155",
+      },
+      {
+        name: "04 metros de cabo elétrico de 2.5mm",
+        photo: require("../../assets/tutoriais/componentes/fio-25.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
+      },   
+      {
+        name: "02 Bornes triplos de conexão rápida",
+        photo: require("../../assets/tutoriais/componentes/borne.png"),
+        link: "https://mauser.pt/catalog/product_info.php?cPath=570_1917_2747&products_id=016-1022",
+      },    
+      {
+        name: "01 Bomba de água 12v",
+        photo: require("../../assets/tutoriais/componentes/bomba12v.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      }, 
+      {
+        name: "01 Bomba de água submergível (para soluções mais simples, pode usar essa)",
+        photo: require("../../assets/tutoriais/componentes/mangueira.jpg"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      },          
+      {
+        name: "02 mangueiras - Na imagem, um kit completo com 2 mangueiras e uma bomba 12v.",
+        photo: require("../../assets/tutoriais/componentes/mangueira.jpg"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=095-0727",
+      },                   
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele.jpg"),
+      },
+      {
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele1.jpg"),
+      },        
+      {
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele2.jpg"),
+      },        
+    ],    
+    code_link:
+      "https://github.com/guikominami/Arduino/tree/f31d15dea090c9dc26fd8757d932b71c6ccae58c/SensorUmidadeRele",
+  },    
 ];
