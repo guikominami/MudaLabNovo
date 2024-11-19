@@ -953,12 +953,12 @@ export const TUTORIAL_DATA = [
   },  
   {
     id: 11,
-    name: "Sistema de rega automático com fonte de água",
+    name: "Sistema de rega automático com sensor de umidade de solo e presença",
     photo: require("../../assets/tutoriais/descricao/horta_automatizada.jpg"),
     description:
       "Neste projeto, o Arduino foi programado para acionar a rega automática de acordo com um intervalo de tempo selecionado. \n \n" + 
-      "Uma bomba puxa a água de um reservatório e leva até as floreiras, por meio de uma mangueira. \n \n" + 
-      "Caso a água acabe no reservatório, o sensor de nível é acionado e a bomba desligada.",
+      "Se o sensor de umidade de solo estiver detectando que o solo esteja molhado, o relê nãop é acionado. \n \n" + 
+      "O sistema pode ser acionado manualmente a qualquer hora com o sensor de presença.",
     needs_list: [
       {
         name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
@@ -966,10 +966,15 @@ export const TUTORIAL_DATA = [
         link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
       },
       {
-        name: "01 Sensor de nível",
-        photo: require("../../assets/tutoriais/componentes/nivel.png"),
-        link: "",
+        name: "01 Sensor de umidade de solo",
+        photo: require("../../assets/tutoriais/componentes/umidade.png"),
+        link: "https://www.reichelt.com/es/es/arduino-sensor-de-humedad-del-suelo-ard-sen-wet2-p282512.html?PROVID=2855&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIQFvG3fp6A1F-jKzqrnr2AnjY7o0uEYMrx5DbaC-hWp79CIqZCz0waAvmQEALw_wcB",
       },
+      {
+        name: "01 Sensor de presença infra vermelho",
+        photo: require("../../assets/tutoriais/componentes/infravermelho.png"),
+        link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },    
       {
         name: "01 Módulo relé 5V",
         photo: require("../../assets/tutoriais/componentes/rele.png"),
@@ -1023,16 +1028,56 @@ export const TUTORIAL_DATA = [
     ],
     steps: [
       {
-        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_presenca_umidade_rele1.jpg"),
       },
       {
-        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele1.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_presenca_umidade_rele2.jpg"),
       },        
       {
-        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_umidade_rele2.jpg"),
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_presenca_umidade_rele3.jpg"),
+      },        
+      {
+        image: require("../../assets/tutoriais/passos/rega_fonte_agua/sensor_presenca_umidade_rele4.jpg"),
       },        
     ],    
     code_link:
-      "https://github.com/guikominami/Arduino/tree/f31d15dea090c9dc26fd8757d932b71c6ccae58c/SensorUmidadeRele",
+      "https://github.com/guikominami/Arduino/tree/649a8b54515fd252ad03165d49343d84b4f23157/irrigacaoSensorPresencaUmidadeSolo",
   },    
+  {
+    id: 12,
+    name: "Sensor de temperatura e umidade com Tela",
+    photo: require("../../assets/tutoriais/descricao/temperatura.png"),
+    description:
+      "Neste projeto, o Arduino foi programado para detectar a temperatura atual, \n \n" + 
+      "a maior e menor temperatura registrada e mostrar em uma tela..",
+    needs_list: [
+      {
+        name: "01 Arduino Uno R3 ATMEGA328P (pode ser a versão compatível)",
+        photo: require("../../assets/tutoriais/componentes/arduino.png"),
+        link: "https://mauser.pt/catalog/product_info.php?products_id=096-7049",
+      },
+      {
+        name: "01 Sensor de umidade e temperatura DHT11",
+        photo: require("../../assets/tutoriais/componentes/DHT11-Sensor.jpg"),
+        link: "https://www.reichelt.com/es/es/arduino-sensor-de-humedad-del-suelo-ard-sen-wet2-p282512.html?PROVID=2855&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIQFvG3fp6A1F-jKzqrnr2AnjY7o0uEYMrx5DbaC-hWp79CIqZCz0waAvmQEALw_wcB",
+      },
+      {
+        name: "01 tela de tamanha 16x2 (16 digitos de largura por 2 de altura) Display LCD 16x2 I2C (Chip para conectar apenas 2 pinos)",
+        photo: require("../../assets/tutoriais/componentes/display-lcd.png"),
+        link: "https://es.aliexpress.com/item/1005005964852367.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005005964852367&netw=x&device=c&albpg=&albpd=es1005005964852367&gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHIkK1snhNj9pRlZJtqtzwgnwju8rwCP39cuW_ebtOk15bs_DXMGLawaArzsEALw_wcB&gclsrc=aw.ds&aff_fcid=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62b283e60d4645a7aaccc1090a671143-1714596006568-07338-UneMJZVf&terminal_id=4b4eda8386c24199825cc0d406ab7f07&afSmartRedirect=y",
+      },         
+      {
+        name: "Jumpers de conexão",
+        photo: require("../../assets/tutoriais/componentes/jumpers.png"),
+        link: "https://www.amazon.es/dp/B01NGTXASZ/ref=pd_lpo_sccl_1/259-2619609-2467705?pd_rd_w=u3okV&content-id=amzn1.sym.4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_p=4ad7c2bf-8626-4e34-ac7a-523f9f26953d&pf_rd_r=8QDNWFA4JJ5H2N3934JB&pd_rd_wg=Gcv5B&pd_rd_r=7328d6a9-0d64-4357-a9bb-ab1c36f3e377&pd_rd_i=B01NGTXASZ&psc=1",
+      },                  
+    ],
+    steps: [
+      {
+        image: require("../../assets/tutoriais/passos/sensor_temperatura.jpg"),
+      },      
+    ],    
+    code_link:
+      "https://github.com/guikominami/Arduino/tree/649a8b54515fd252ad03165d49343d84b4f23157/SensorTemperatura",
+  },     
 ];
