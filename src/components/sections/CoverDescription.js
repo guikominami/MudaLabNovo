@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { styled } from "styled-components";
+import { LanguageContext } from "../../context/language.context";
+import { homeText } from "../../assets/data/languageText";
 
 const Section = styled.section`
   height: 70vh;
@@ -98,25 +100,22 @@ const SubText = styled.p`
 `;
 
 const CoverDescription = () => {
+  
+  const { language } = useContext(LanguageContext);
+  
   return (
     <Section>
       <Container>
         <Box>
           <Subtitle>
-            Todos e todas podem ser transformadores de realidades!
+            {homeText[language].title}
           </Subtitle>
           <br></br>
           <SubText>
-            É com base nessa visão que apostamos no diálogo entre a
-            educação e a tecnologia para desenvolver cursos, projetos,
-            experimentos e traquitanas que têm como premissa a transformação
-            social, cultural e ambiental. 
+            {homeText[language].body1}
             <br></br>
             <br></br>            
-            Eletrônica, fabricação digital, robótica e programação aliados à 
-            sustentabilidade, à inclusão, à mobilização social e a conteúdos e 
-            conhecimentos utilizados para cocriar soluções, reflexões e caminhos 
-            para seguirmos coletivamente.
+            {homeText[language].body2}
           </SubText>
         </Box>
       </Container>

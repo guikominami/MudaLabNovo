@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { styled } from "styled-components";
 
 import LinkedIn from "../../assets/icons/LinkedIn";
 import Instagram from "../../assets/icons/Instagram";
+
+import { LanguageContext } from "../../context/language.context";
+
+import englishIcon from "../../assets/icons/en_US.png";
+import portugueseIcon from "../../assets/icons/pt_BR.png";
 
 const MenuArea = styled.div`
   display: flex;
@@ -28,7 +33,19 @@ const SocialMediaMenuMobile = styled.div`
   }
 `;
 
+const Icon = styled.img`
+  height: 1.7rem;
+  margin-top: 0.2rem;
+  margin-right: 0.1rem;
+  
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 const SocialMediaMenu = ({ transparent }) => {
+  const { changeLanguage } = useContext(LanguageContext);
+
   return (
     <>
       <MenuArea>
@@ -42,6 +59,16 @@ const SocialMediaMenu = ({ transparent }) => {
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
           <LinkedIn color={transparent ? "white" : "black"} />
         </a>
+        <Icon
+          src={englishIcon}
+          onClick={() => changeLanguage("english")}
+          alt="English icon"
+        />
+        <Icon
+          src={portugueseIcon}
+          onClick={() => changeLanguage("portuguese")}
+          alt="Portuguese icon"
+        />
       </MenuArea>
       <SocialMediaMenuMobile>
         <a

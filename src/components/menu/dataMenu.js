@@ -1,4 +1,4 @@
-export const dataItemsMenu = [
+export const dataItemsMenuPt = [
   {
     title: 'QUEM SOMOS',
     url: '/'
@@ -45,6 +45,59 @@ export const dataItemsMenu = [
       },
       {
         title: 'PARCEIROS',
+        url: '/parceiros'
+      },                      
+    ]    
+  },  
+];
+
+export const dataItemsMenuEn = [
+  {
+    title: 'Who we are',
+    url: '/'
+  },
+  {
+    title: 'OUR PROJECTS',
+    submenu: [
+      {
+        title: 'LABORATORIES',
+        url: '/laboratorios'
+      },
+      {
+        title: 'PEDAGOGICAL MATERIALS',
+        url: '/educacao'
+      },
+      {
+        title: 'PROGRAMMING AND ROBOTICS',
+        url: '/robotica'
+      },
+      {
+        title: 'Sustainability',
+        url: '/sustentabilidade'
+      },   
+      {
+        title: 'Technology TUTORIALS',
+        url: '/tutoriais'
+      },             
+    ]
+  },
+  {
+    title: 'ABOUT US',
+    submenu: [
+      {
+        title: 'METODOLOGY',
+        url: '/metodologia'
+      },
+      {
+        title: 'TEAM',
+        url: '/equipe'
+      },
+      {
+        title: 'NEWS',
+        url: '/noticias'
+      },
+      {
+        title: 'PARTNERS',
         url: '/parceiros'
       },                      
     ]    

@@ -1,17 +1,18 @@
 import { styled } from "styled-components";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import Dropdown from "./Dropdown";
 import SubMenuItemMobile from "./SubMenuItemMobile";
 
+import { LanguageContext } from "../../context/language.context";
+
 const MenuItem = styled.li`
   margin: 0 1rem;
   color: ${(props) => props.theme.text};
   font-size: ${(props) => props.theme.fontxl};
-  font-weight: ${(props) =>
-    props.transparent ? 500 : 600};
-  
+  font-weight: ${(props) => (props.transparent ? 500 : 600)};
+
   color: ${(props) =>
     props.transparent ? props.theme.body : props.theme.text};
 
@@ -54,6 +55,8 @@ const MenuItems = ({ items, transparent, click }) => {
   const [dropdownOpen, setDropDownOpen] = useState(false);
   const [menuItemId, setMenuItemId] = useState("");
 
+
+
   let ref = useRef();
 
   useEffect(() => {
@@ -85,11 +88,7 @@ const MenuItems = ({ items, transparent, click }) => {
   };
 
   return (
-    <MenuItem 
-      transparent={transparent} 
-      ref={ref} 
-      onClick={click}      
-    >
+    <MenuItem transparent={transparent} ref={ref} onClick={click}>
       {items.submenu ? (
         <span
           type="menu"
@@ -102,9 +101,7 @@ const MenuItems = ({ items, transparent, click }) => {
             open={dropdownOpen}
             close={CloseDropDown}
           />
-          <SubMenuItemMobile
-            submenus={items.submenu}
-          />          
+          <SubMenuItemMobile submenus={items.submenu} />
         </span>
       ) : (
         <Link type="menu" id={items.title} to={items.url}>

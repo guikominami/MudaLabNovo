@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
@@ -19,31 +19,34 @@ import Metodologia from "./components/pages/Metodologia";
 import Videos from "./components/pages/Videos";
 import Tutoriais from "./components/pages/Tutoriais";
 import Parceiros from "./components/pages/Parceiros";
+import LanguageContextProvider from "./context/language.context";
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <GlobalStyles />
-      <ThemeProvider theme={light}>
-      <Header />                
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/laboratorios' element={<LabTec/>}/>
-        <Route path='/educacao' element={<Educacao/>}/>
-        <Route path='/robotica' element={<Robotica/>}/>
-        <Route path='/sustentabilidade' element={<Sustentabilidade/>}/>
-        <Route path='/metodologia' element={<Metodologia/>}/>
-        <Route path='/equipe' element={<Equipe/>}/>
-        <Route path='/noticias' element={<Noticias/>}/>
-        <Route path='/videos' element={<Videos/>}/>
-        <Route path='/tutoriais' element={<Tutoriais/>}/>
-        <Route path='/parceiros' element={<Parceiros/>}/>
-      </Routes>
-      <Footer />
-     </ThemeProvider>         
-     </BrowserRouter>     
-   </>
+      <BrowserRouter>
+        <GlobalStyles />
+        <ThemeProvider theme={light}>
+          <LanguageContextProvider>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/laboratorios" element={<LabTec />} />
+              <Route path="/educacao" element={<Educacao />} />
+              <Route path="/robotica" element={<Robotica />} />
+              <Route path="/sustentabilidade" element={<Sustentabilidade />} />
+              <Route path="/metodologia" element={<Metodologia />} />
+              <Route path="/equipe" element={<Equipe />} />
+              <Route path="/noticias" element={<Noticias />} />
+              <Route path="/videos" element={<Videos />} />
+              <Route path="/tutoriais" element={<Tutoriais />} />
+              <Route path="/parceiros" element={<Parceiros />} />
+            </Routes>
+            <Footer />
+          </LanguageContextProvider>
+        </ThemeProvider>
+      </BrowserRouter>
+    </>
   );
 }
 

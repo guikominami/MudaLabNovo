@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 
 import { COVER_CAROUSEL } from "../../assets/data/imagesInfo";
 import { COVER_CAROUSEL_MOBILE } from "../../assets/data/imagesInfo";
 import SwiperComponent from "../elements/Swiper";
+
+import { LanguageContext } from "../../context/language.context";
 
 const Container = styled.div`
   width: 100%;
@@ -12,12 +14,12 @@ const Container = styled.div`
   position: relative;
 
   @media (max-width: 48em) {
-    height: 200%;  
+    height: 200%;
   }
 `;
 
 const TextContainer = styled.div`
-/*   position: fixed;
+  /*   position: fixed;
   top: 250px;
   left: 30px;
   z-index: 2; */
@@ -39,7 +41,7 @@ const TextContainer = styled.div`
     margin-top: 26rem;
     margin-left: 2rem;
 
-    text-shadow: 2px 2px black;    
+    text-shadow: 2px 2px black;
   }
 `;
 
@@ -58,20 +60,40 @@ const SwiperContainerMobile = styled.div`
 `;
 
 const CoverCarousel = () => {
+  
+  const {language} = useContext(LanguageContext);
+
+  let content = (
+    <>
+      Tecnologia e<br></br>
+      Educação para<br></br>
+      Transformação <br></br>
+      Social
+    </>
+  );
+  
+  if (language === "english"){
+    content = (
+      <>
+        Technology and<br></br>
+        Education for<br></br>
+        Social <br></br>
+        Transformation
+      </>
+    );
+  }
+
   return (
     <Container>
       <TextContainer>
-          Tecnologia e<br></br>
-          Educação para<br></br>
-          Transformação <br></br>
-          Social
+        {content}
       </TextContainer>
       <SwiperContainerDesktop>
-        <SwiperComponent Images={COVER_CAROUSEL}/>
+        <SwiperComponent Images={COVER_CAROUSEL} />
       </SwiperContainerDesktop>
       <SwiperContainerMobile>
-        <SwiperComponent Images={COVER_CAROUSEL_MOBILE}/>
-      </SwiperContainerMobile>      
+        <SwiperComponent Images={COVER_CAROUSEL_MOBILE} />
+      </SwiperContainerMobile>
     </Container>
   );
 };

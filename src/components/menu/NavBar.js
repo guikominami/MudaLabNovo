@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { styled } from "styled-components";
-
-import { dataItemsMenu } from './dataMenu';
+import { dataItemsMenuPt } from './dataMenu';
+import { dataItemsMenuEn } from './dataMenu';
 import MenuItems from './MenuItems';
 import SocialMediaMenu from './SocialMediaMenu';
+import { LanguageContext } from '../../context/language.context';
 
 const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  text-transform: uppercase;
 
   margin-right: 6rem;
 
@@ -93,6 +95,14 @@ const HamburgerMenu = styled.span`
 
 const NavBar = ({ transparent }) => {
   const [click, setClick] = useState(0);
+  
+  const { language } = useContext(LanguageContext);
+  
+  let dataItemsMenu = dataItemsMenuPt;
+  
+  if (language === "inglês"){
+    dataItemsMenu = dataItemsMenuEn
+  }
 
   const SubMenuItemClickHandler = () => {
     setClick(0);
