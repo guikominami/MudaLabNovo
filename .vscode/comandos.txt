@@ -1,0 +1,127 @@
+liberar execucao de scripts. Abrir o power shell em modo admin:
+Set-ExecutionPolicy Unrestricted
+
+install npm:
+npm install -g npm
+
+npm install 
+
+create vite project:
+npm create vite@latest
+
+npm run dev
+
+checar versões:
+npm view react version
+node -v
+
+---------------------------------
+GIT
+---------------------------------
+git push -u origin main
+
+ignore changes and pull
+git reset --hard origin/main  
+git pull
+---------------------------------
+align
+---------------------------------
+
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  //Alinhar Vertical
+  align-items: center;
+  //alinhar horizontal
+  justify-content: center;
+
+
+
+
+---------------------------------
+
+---------------------------------
+useState
+---------------------------------
+https://react.dev/learn/updating-arrays-in-state
+
+setPerson({
+  ...person, // Copy the old fields
+  firstName: e.target.value // But override this one
+});
+
+Updating state based on the previous state 
+function sumAge() {
+  setAge(a => a + 1); // setAge(42 => 43)
+  setAge(a => a + 1); // setAge(43 => 44)
+  setAge(a => a + 1); // setAge(44 => 45)
+}
+
+Updating state based on the previous state 
+const [age, setAge] = useState(42);
+
+function increment() {
+  setAge(a => a + 1);
+}
+
+setProjectState((prevState) => {
+  const newProject = {
+    ...projectData,
+    id: Math.random(),
+  };
+
+//adding item
+setArtists( // Replace the state
+  [ // with a new array
+    ...artists, // that contains all the old items
+    { id: nextId++, name: name } // and one new item at the end
+  ]
+);
+
+//replacing the values
+setPlayerData({
+  ...playerData,
+  name: playerName.current.value,
+  class: playerClass.current.value,
+  power: 10,
+  defense: 10,
+});
+
+//new data
+const newWord = {
+  word: enteredWord,
+  languageId: languageId
+}
+setWordsData((prevState)=> [...prevState, newWord]);
+
+//estranho
+function handleAddNewPlayer(player) {
+    console.log("receba", player);
+
+    const oldPlayerData = [...playerData];
+    const playerToUpdate = oldPlayerData.find(
+      (p) => p.id === player.id
+    );
+    playerToUpdate.name = player.name;
+    setPlayerData(oldPlayerData);
+  }
+  
+  
+@media screen and (max-width: 600px) {
+
+}
+
+
+https://medium.com/@worachote/building-a-todo-list-app-with-reactjs-a-step-by-step-guide-2c58b9b6c0f5
+https://medium.com/@anybeethero/building-a-todo-list-app-in-react-js-with-local-storage-b4aa1b680037
+
+
+
+https://dev.to/rikurouvila/clean-and-reusable-data-fetching-in-react-components-165
+
+
+https://chrisdevcode.hashnode.dev/how-to-fetch-and-add-data-in-react-from-an-api
+
+cria um componente só pra lista
+cria um componente só pra add
+cria um componente geral que dá o fetch
