@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import SubMenuItemMobile from "./SubMenuItemMobile";
 
-import { LanguageContext } from "../../context/language.context";
-
 const MenuItem = styled.li`
   margin: 0 1rem;
   color: ${(props) => props.theme.text};
@@ -54,8 +52,6 @@ const MenuItem = styled.li`
 const MenuItems = ({ items, transparent, click }) => {
   const [dropdownOpen, setDropDownOpen] = useState(false);
   const [menuItemId, setMenuItemId] = useState("");
-
-
 
   let ref = useRef();
 

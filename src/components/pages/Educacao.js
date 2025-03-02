@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Carousel from "../structure/Carousel";
 import SectionComponent from "../elements/SectionComponent";
@@ -8,29 +8,27 @@ import BoxRightComponent from "../elements/BoxRightComponent";
 import SubtitleComponent from "../elements/SubtitleComponent";
 import SubTextComponent from "../elements/SubTextComponent";
 
+import { educationText } from "../../assets/data/languageText";
+import { LanguageContext } from "../../context/language.context";
+
 import { MPA_DATA } from "../../assets/data/imagesInfo";
 
 const Educacao = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <SectionComponent id="education">
       <ContainerComponent>
         <BoxLeftComponent>
-          <SubtitleComponent>Materiais Pedagógicos.</SubtitleComponent>
+          <SubtitleComponent>{educationText[language].title}</SubtitleComponent>
           <SubTextComponent>
-            Formação para o desenho e construção coletiva de materiais
-            educativos com o uso de novas tecnologias, para auxiliar no processo
-            de ensino-aprendizagem de estudantes.
+            {educationText[language].body1}
           </SubTextComponent>
           <SubTextComponent>
-            Foram realizadas 6 edições pelo Brasil, desde 2018, que apoiaram
-            professores de escolas públicas no desenvolvimento de dispositivos
-            em diálogo com os programas de educação.
+            {educationText[language].body2}
           </SubTextComponent>
           <SubTextComponent>
-            Tem como objetivos utilizar a tecnologia open source como
-            potencializadora de estratégias educativas e incentivar o trabalho
-            colaborativo e o protagonismo da comunidade escolar para a melhoria
-            da qualidade da educação nos territórios.
+            {educationText[language].body3}
           </SubTextComponent>
         </BoxLeftComponent>
         <BoxRightComponent>

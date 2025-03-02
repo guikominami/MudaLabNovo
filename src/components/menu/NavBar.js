@@ -100,7 +100,7 @@ const NavBar = ({ transparent }) => {
   
   let dataItemsMenu = dataItemsMenuPt;
   
-  if (language === "inglês"){
+  if (language === "english"){
     dataItemsMenu = dataItemsMenuEn
   }
 
